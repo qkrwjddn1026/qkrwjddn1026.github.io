@@ -5,16 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WE DISPLAY</title>
-    <!-- 메타포 -->
+    
+   <!-- 메타포 -->
+    
     <!-- 오픈그래프 -->
+    
     <!-- 파비콘 -->
+    
     <!-- 각 종 플러그인과 설정 파일 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 구형 브라우저 html5태그 인식 -->
+    
+    <!-- 구형 브라우저에서 css animation 인식 -->
+    
+    <!-- 구형 브라우저에서 미디어쿼리 인식 -->
+    
+    <!-- jquery 플러그인 연결 -->
+    
+    <link rel="stylesheet" href="./css/reset2.css">
+    
+    <style>
+        /* header.css */
+        .hd { width: 100%; height:122px; position:absolute; top: 0; 
+        left: 0; z-index:91; }
+        .hd_wrap { width: 1200px; margin: 0 auto; }
+        .logo { display:block; width: 144px; height: auto; float:left;
+        margin:30px 0px; }
+        .logo img { display:block; width: 100%; height: auto;  }
+        .tnb { float:right; margin: 30px 0px; }
+        .tnb a { padding: 1.5em; font-size:12px; color:#333; }
+        .tnb a:hover { color:deepskyblue; font-weight:700; text-decoration: underline; text-decoration-style:dotted; }
+        /* 방법1 : logo/tnb/gnb 한 줄로 배치 */
+        /* .gnb { float:left;  width: 704px; margin-left: 50px; margin-top: 16px; } */
+        /* 방법2 : gnb만 밑으로 내릴 경우 */
+        .gnb { clear:both; width: 100%; }
+        /* clear-fix 처리 */
+        .gnb:after { content:""; display:block; clear:both; } 
+        .gnb > ul:after { content:""; display:block; clear:both; }
+        .gnb > ul > li { float:left; width: 20%; height:40px; line-height: 40px; position:relative; }
+        .gnb .dp1 { display:block; color:#333; text-align: center; 
+        background-color:#eee; font-size:16px; }
+        .gnb li:hover .dp1 { color:#fff; background-color:#333; }
+        .gnb .sub { display:none; width: 100%; height:auto; position:absolute; top:40px; background-color:#ccc;
+        left: 0; z-index:90; height: 124px; }
+        .gnb:hover li .sub { display:block;  }
+        .gnb li .sub li { clear:both; height: 30px; line-height: 30px; 
+        border-bottom:1px solid #fff; }
+        .gnb li .sub li a { background-color:#ccc; color:#111; font-size:14px; display:block; text-indent:2em; 
+        overflow: hidden; white-space:nowrap; text-overflow: ellipsis; }
+        .gnb li .sub li:hover a { color:deepskyblue; }
+        .content { clear: both; width: 100%; }
+        .vs { clear:both; width: 100%; height:100vh; overflow:hidden; }
+        .vdo { display:block; width:100%; height:auto; }
+    
+        /* content */
+        .page { clear:both; width: 100%; }
+        .page_wrap { width: 1200px; margin: 0 auto; }
+        #page1, #page3 { background-color:#ececec; }
+        .page_tit { text-align: center; font-size:32px; padding-top:1.2em; padding-bottom: 0.8em; }
+        .lst { clear:both; width: 1200px; }
+        .lst:after { content:""; display:block; clear: both;}
+        .lst li { margin-bottom: 40px; }
+        .lst li.left { float:left; width: 816px; height: 459px; }
+        .lst li.right { float:right; width:350px; height: 459px; }
+        .ico_lst { clear:both; width: 100%; overflow:hidden; }
+        .ico_lst li a { display:block; background-repeat: no-repeat; 
+        background-position:0px center; background-size:auto 80%; 
+    padding-left: 55px; }
+        .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
+        .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
+        .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
+        .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
+        .cate_com { color:#222; font-size:14px; overflow:hidden;
+        white-space:nowrap; text-overflow:ellipsis; }
+    
+        #page2 { background-color: rgba(230, 248, 255, 0.5); }
+        .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
+        .pic_lst:after { content:""; display:block; clear:both; }
+        .pic_lst li { float:left; position:relative; margin-bottom: 40px; }
+        .pic_lst li a { display:block; width: 360px; margin-right: 40px;
+        overflow: hidden; height: 300px; }
+        .pic_lst li a img { display:block; width:600px; margin-left: -120px; transition-duration:0.8s; }
+        .pic_lst li a:hover img { margin-left: 0; }
+        .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
+        .pic_lst li a:hover .hv_box { opacity:1; }
+        .pic_tit { position:absolute; top:30px; left: 30px; 
+        text-shadow:0px 0px 3px red; }
+        .pic_com { position:absolute; right:30px; bottom:30px; 
+            text-shadow:0px 0px 3px blue; }
+    
+        #page3 { background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position:center center; height: 100vh; background-image:url("./img/bg_partners.jpg"); overflow:hidden; }
+        #page3 .page_wrap { width: 100%; }
+        .circle_lst { clear:both; width: 4455px; }
+        .circle_lst li { width: 200px; height: 200px; position:relative; border-radius:120px; overflow:hidden; background-color: #fff;
+        float:left; margin:28px;  }
+        .circle_lst.lst2 li { float:right; }
+        .circle_lst li a { display:block; width: 100%; height: 100%; }
+        .circle_lst li a img { display:block; width:160px; height:auto; 
+        position:absolute; top:50%; left: 20px; z-index:11; margin-top: -28px; }
+    
+        /* footer */
+        .ft { clear:both; width: 100%; height: 200px; background-color: #232; padding-bottom: 50px; }
+        .ft_wrap { clear:both; width: 1200px; margin: 0 auto; padding-top: 50px;  }
+        .ft_wrap:after { content:""; display:block; clear:both; }
+        .ft_logo { float:left; width: 150px; }
+        .mid_box { float:left; width: 760px; padding-left: 100px; }
+        .fnb { clear:both; }
+        .fnb a { color:#fff; font-size:14px; padding: 24px; }
+        .fnb a.dpc { color:deeppink; }
+        .addr { padding-left: 24px; color:#ececec; padding-top: 20px; 
+        font-size:12px; line-height: 2; }
+        .copyright { padding-left: 24px; color:#fff; padding-top: 10px; }
+        .sel_box { float:right; border-bottom:1px solid #fff;
+        height: 44px; line-height: 44px; text-align:center; width: 140px; }
+        #sel { border:none; outline: none; background-color: transparent; color:#fff; }
+        #sel option { color:#333; }
+        </style>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var ht = $(window).height();
+                var tp = $(this).scrollTop();
+                if(tp>=600){
+                    $(".hd").css("position","fixed");
+                }else{
+                    $(".hd").css("position","absolute   ");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="wrap">
         <header class="hd">
             <div class="hd_wrap">
-                <a href="/img/samsung1.jpg" class="logo"><img src="" alt=""></a>
+                <a href="" class="logo"><img src="./img/icon/h1_title.jpg" alt="로고"></a>
                 <nav class="tnb">
                     <a href="login.html">로그인</a>
                     <a href="join.html">회원가입</a>
@@ -59,7 +188,7 @@
                             <ul class="sub">
                                 <li><a href="employment.html#page1">안전경영</a></li>
                                 <li><a href="employment.html#page2">준법경영</a></li>
-                                <li><a href="employment.html#page3">지속가능<br>경영보고서</a></li>
+                                <li><a href="employment.html#page3">지속가능 경영보고서</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,32 +197,32 @@
         </header>
         <div class="content">
             <figure class="vs">
-                <img src="./img/samsung2.jpg" class="img">
+                <video src="./video/video01.mp4" autoplay muted class="vdo"></video>
             </figure>
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">조선해양산업의 미래</h2>
                     <ul class="lst">
                         <li class="left">
-                            <iframe name="" id="" src="https://" frameborder="0"></iframe>
+                            <iframe name="vdo2" id="vdo2" width="816" height="459" src="https://www.youtube.com/embed/z68Tl9gSWko" frameborder="0"></iframe>
                         </li>
                         <li class="right">
                             <ul class="ico_lst">
                                 <li>
-                                    <a href="./img/samsung3.jpg" class="icon1">
-                                        <h3 class="cate_tit">카테고리제목1</h3>
+                                    <a href="https://www.youtube.com/embed/r3k-dfJoL7s"  class="icon1" target="vdo2">
+                                        <h3 class="cate_tit">다양한 기술계발 사례</h3>
                                             <p class="cate_com">카테고리설명1</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./img/samsung4.jpg" class="icon2">
-                                        <h3 class="cate_tit">카테고리제목2</h3>
+                                    <a href="https://www.youtube.com/embed/z68Tl9gSWko" class="icon2" target="vdo2">
+                                        <h3 class="cate_tit">뉴스/공지</h3>
                                         <p class="cate_com">카테고리설명2</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./img/samsung5.jpg" class="icon3">
-                                        <h3 class="cate_tit">카테고리제목3</h3>
+                                    <a href="https://www.youtube.com/embed/JlbcrLIMLCw" class="icon3" target="vdo2">
+                                        <h3 class="cate_tit">홍보영상</h3>
                                         <p class="cate_com">카테고리설명3</p>
                                     </a>
                                 </li>   
@@ -108,7 +237,7 @@
                         <ul class="pic_lst">
                             <li>
                                 <a href="">
-                                    <img src="/img/samsung5.jpg" alt="" class="pic">
+                                    <img src="./img/samsung5.jpg" alt="Battry System Test-Bed" class="pic">
                                     <div class="hv_box">
                                         <h3 class="pic_tit">Battry System Test-Bed</h3>
                                         <p class="pic_com">친환경 선박 기술 선도를 위해 칠서에 국내 최초로
@@ -118,7 +247,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="./img/samsung1.jpg" alt="" class="pic">
+                                    <img src="./img/samsung1.jpg" alt="예인수조" class="pic">
                                     <div class="hv_box">
                                         <h3 class="pic_tit">예인수조</h3>
                                         <p class="pic_com">대전에 위치한 세계 최대 규모 상업용 예인수조(길이 400m, 폭 14m, 깊이 7m)를
@@ -128,7 +257,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="./img/samsung2.jpg" alt="" class="pic">
+                                    <img src="./img/samsung2.jpg" alt="공동수조" class="pic">
                                     <div class="hv_box">
                                         <h3 class="pic_tit">공동수조</h3>
                                         <p class="pic_com">세계 최고 조선소의 위상에 부합하는 초일류 기술 확보를 
@@ -138,7 +267,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="./img/samsung3.jpg" alt="" class="pic">
+                                    <img src="./img/samsung3.jpg" alt="모형제작" class="pic">
                                     <div class="hv_box">
                                         <h3 class="pic_tit">모형제작</h3>
                                         <p class="pic_com">모형시험으로 실제 선박성능을 정확히 추정하려면 실제 선박 및 추진기를 축소한 정밀모형이 필요합니다.
@@ -149,7 +278,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="./img/samsung4.jpg" alt="" class="pic">
+                                    <img src="./img/samsung4.jpg" alt="KOLAS 시공승인" class="pic">
                                     <div class="hv_box">
                                         <h3 class="pic_tit">KOLAS 시공승인</h3>
                                         <p class="pic_com">KOLAS(Korea Laboratory Accreditation Scheme)는1992년 8월 창설된 한국인정기구로 국가기술표준
@@ -164,30 +293,30 @@
                     <div class="page_wrap">
                         <h2 class="page_tit">믿고 맡길 수 있는<br>삼성 중공업<br>전문 파트너스</h2>
                         <ul class="circle_lst">
-                            <li><a href=""><img src="" alt="파트너스로고1" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고2" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고3" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고4" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고5" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고6" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고7" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고8" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고9" class="thumb"></a></li>
-                            <li><a href=""><img src="" alt="파트너스로고10" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/h1_title.jpg" alt="파트너스로고1" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고1.png" alt="파트너스로고2" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고2.jpg" alt="파트너스로고3" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고3.png" alt="파트너스로고4" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고4.jpg" alt="파트너스로고5" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고5.png" alt="파트너스로고6" class="thumb"></a></li>
+                            <li><a href=""><img src="./img/icon/파트너스로고6.png" alt="파트너스로고7" class="thumb"></a></li>
                         </ul>
                     </div>
                 </section>
                 <footer class="ft">
                     <div class="ft_wrap">
-                        <div class="ft_logo"><img src="/img/samsung4.jpg" alt="하단로고"></div>
+                        <div class="ft_logo"><img src="./img/icon/h1_title.jpg" alt="하단로고"></div>
                         <div class="mid_box">
                             <nav class="fnb">
                                 <a href="member01.html">개인정보 처리 방침</a>
                                 <a href="member02.html">이용약관</a>
                                 <a href="member03.html">이메일무단수집거부</a>
+                                <a href="member04.html">보안 신고</a>
+                                <a href="member05.html">윤리경영(부정제보)</a>
+                                <a href="member06.html">찾아오시는길</a>
                             </nav>
                             <p class="addr">
-                               경기도 성남시 분당구 판교로 227번길 23 대표번호 :031-5171-7000ㄴ
+                               경기도 성남시 분당구 판교로 227번길 23 대표번호 :031-5171-7000
                                   
                             </p>
                             <p class="copyright">COPYRIGHT ⓒ LG DISPLAY CO., LTD. ALL RIGHTS RESERVED.</p>
