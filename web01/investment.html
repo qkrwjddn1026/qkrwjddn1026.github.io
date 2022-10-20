@@ -55,6 +55,23 @@
     height: 60px; line-height: 60px; text-align: center; font-size:20px; border-radius:32px; visibility:hidden; transition-duration:0.8s; }
     .to_top:hover { background-color: deepskyblue; }
     .to_top.on { visibility: visible; }
+
+    .high img{width: 1200px; height: 200px;}
+
+    .tb_fr { width: auto;  }
+    .tb { display:table; border-collapse: collapse; margin-left: auto; margin-right: auto; width: 1200px; height: 200px; margin-bottom: 150px;}
+    .tb tr { display:table-row; }
+    .tb td, .tb th { display:table-cell; text-align: center; 
+    border-bottom:1px solid #333; line-height: 30px; }
+    .tb td a { display:block; color:#333; overflow:hidden; text-overflow: ellipsis; 
+    white-space:nowrap; padding-right: 10px; width:330px; }
+    .tb .nt_num { width:60px; }
+    .tb .nt_tit { width:340px; }
+    .tb .nt_auth { width: 80px; }
+    .tb .nt_afte { width: 110px; }
+    .tb td.nt_tit { width:340px; text-align: left;}
+    .tb tr:first-child th { border-top:3px solid #333; }
+    .tb tr:last-child td { border-bottom:3px solid #333; }
     </style>
         <link rel="stylesheet" href="footer.css">
         <script>
@@ -156,7 +173,179 @@
             </div>
             <section class="page">
                 <div class="page_wrap">
-                    <h2 class="page_title">재무정보</h2>
+                    <h2 class="page_title">재무하이라이트</h2>
+                    <h3>삼성중공업의 주요 재무현황을<br>확인할 수 있습니다.</h3>
+                    <div class="high">
+                        <h4 class="high">매출액(단위:십억원)</h4>
+                        <img src="./img/highlightGraph.jpg" alt="">
+                    </div>
+                    <div class="highresult">
+                        <h3>요약재무정보(단위:백만원)</h3>
+                        <div class="fb_fr">
+                            <table class="tb">
+					
+					<thead>
+						<tr>
+							<th scope="col" class="first">과목</th>
+							
+							<th scope="col">2015</th>		
+							<th scope="col">2016</th>
+							<th scope="col">2017</th>
+							<th scope="col">2018</th>
+							<th scope="col">2019</th>
+							<th scope="col">2020</th>
+							<th scope="col">2021</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="total first">
+							<th scope="row">자산총계</th>
+							
+							<td>17,301,591</td>
+							<td>17,217,463</td>
+							<td>13,818,113</td>
+							<td>14,282,892</td>
+							<td>13,600,084</td>
+							<td>12,922,171</td>
+							<td>12,138,596</td>
+						</tr>
+						<tr>
+							<th scope="row">유동자산</th>
+							
+							<td>10,110,481</td>
+							<td>9,950,790</td>
+							<td>6,779,933</td>
+							<td>7,405,496</td>
+							<td>6,929,473</td>
+							<td>6,697,963</td>
+							<td>5,593,583</td>
+						</tr>
+						<tr>
+							<th scope="row">비유동자산</th>
+						
+							<td>7,191,111</td>
+							<td>7,266,673</td>
+							<td>7,038,181</td>
+							<td>6,877,396</td>
+							<td>6,670,611</td>
+							<td>6,224,208</td>
+							<td>5,593,583</td>
+						</tr>
+						<tr class="total first">
+							<th scope="row">부채총계</th>
+							
+							<td>13,035,846</td>
+							<td>10,942,152</td>
+							<td>8,020,660</td>
+							<td>7,536,612</td>
+							<td>8,351,156</td>
+							<td>9,203,939</td>
+							<td>8,041,329</td>
+						</tr>
+						<tr>
+							<th scope="row">유동부채</th>
+							
+							<td>9,570,119</td>
+							<td>9,045,743</td>
+							<td>7,145,283</td>
+							<td>6,267,119</td>
+							<td>7,089,068</td>
+							<td>7,533,878</td>
+							<td>7,058,250</td>
+						</tr>
+						<tr>
+							<th scope="row">비유동부채</th>
+							
+							<td>3,465,727</td>
+							<td>1,896,409</td>
+							<td>875,378</td>
+							<td>1,269,493</td>
+							<td>1,262,088</td>
+							<td>1,670,061</td>
+							<td>983,079</td>
+						</tr>
+						<tr class="total first">
+							<th scope="row">자본총계</th>
+							
+							<td>4,265,745</td>
+							<td>5,470,146</td>
+							<td>5,797,453</td>
+							<td>6,746,280</td>
+							<td>5,248,928</td>
+							<td>3,718,232</td>
+							<td>4,097,267</td>
+						</tr>
+						<tr>
+							<th scope="row">자본금</th>
+							
+							<td>1,154,951</td>
+							<td>1,950,574</td>
+							<td>1,950,574</td>
+							<td>3,150,574</td>
+							<td>3,150,574</td>
+							<td>3,150,574</td>
+							<td>880,114</td>
+						</tr>
+						<tr>
+							<th scope="row">이익잉여금</th>
+							
+							<td>3,593,525</td>
+							<td>3,519,572</td>
+							<td>3,198,433</td>
+							<td>2,800,081</td>
+							<td>1,502,204</td>
+							<td>30,085</td>
+							<td>1,355,173</td>
+						</tr>
+						<tr class="total first">
+							<th scope="row">매출액</th>
+							
+							<td>9,714,441</td>
+							<td>10,414,188</td>
+							<td>7,901,235</td>
+							<td>5,265,120</td>
+							<td>7,349,656</td>
+							<td>6,860,318</td>
+							<td>6,622,001</td>
+						</tr>
+						<tr>
+							<th scope="row">영업이익</th>
+							
+							<td>(1,501,905)</td>
+							<td>(147,199)</td>
+							<td>(524,164)</td>
+							<td>(409,252)</td>
+							<td>(616,586)</td>
+							<td>(1,054,144)</td>
+							<td>(1,311,956)</td>
+						</tr>
+						<tr>
+							<th scope="row">법인세비용차감전순이익</th>
+							
+							<td>(1,461,810)</td>
+							<td>(68,940)</td>
+							<td>(463,899)</td>
+							<td>(497,598)</td>
+							<td>(1,139,246)</td>
+							<td>(1,475,030)</td>
+							<td>(1,349,816)</td>
+						</tr>
+						<tr>
+							<th scope="row">당기순이익</th>
+							
+							<td>(1,212,110)</td>
+							<td>(138,776)</td>
+							<td>(340,748)</td>
+							<td>(388,189)</td>
+							<td>(1,315,353)</td>
+							<td>(1,492,700)</td>
+							<td>(1,452,070)</td>
+						</tr>
+					</tbody>
+				</table>
+</div>
+                    </div>
+
                 </div>
             </section>
             </div>
@@ -183,7 +372,8 @@
                 </div>
                 <section class="page">
                     <div class="page_wrap">
-                        <h2 class="page_title">주가정보</h2>
+                        <h2 class="page_title">현재가</h2>
+                        <iframe src="https://ir.gsifn.io/samsungshi/ir2_current.html?koreng=1" title="삼성중공업 주가정보(현재가)" frameborder="0" scrolling="no" style="margin:0;height:595px;width:750px;"></iframe>
                     </div>
                 </section>
             </div>
@@ -210,7 +400,276 @@
                 </div>
                 <section class="page">
                     <div class="page_wrap">
-                        <h2 class="page_title">지배구조</h2>
+                        <h2 class="page_title">주주</h2>
+                        <h3>주주의 권리를 보장하고<br>기업가치 향상을 위해 노력하겠습니다.</h3>
+                        <p>주식에 관한 사항</p>
+                        <h4>주식발행 내역</h4>
+                        <div class="tb_fr">
+                            <table class="tb" >
+                            
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="firstTh">주식의 종류</th>
+                                        <th scope="col">발행주식 총수(주)</th>
+                                        <th scope="col">액면총액(천원)</th>
+                                        <th scope="col" class="centerTh">비고</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr class="total">
+                                        <th scope="row">합계</th>
+                                        <td class="boldTotal">880,114,845</td>
+                                        <td class="normalTotal">880,114,845</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">보통주</th>
+                                        <td class="boldTotal">880,000,000</td>
+                                        <td>880,000,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">우선주</th>
+                                        <td class="boldTotal">114,845</td>
+                                        <td>114,845</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        </div>
+                        <h4>자기주식 보유현황</h4>
+                        <div class="tb_fr">
+                            <table class="tb" >
+                            
+                            
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="firstTh">주식의 종류</th>
+                                        <th scope="col">주식수량(주)</th>
+                                        <th scope="col" class="centerTh">비고</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr class="total">
+                                        <th scope="row">합계</th>
+                                        <td>25,964,429</td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">보통주</th>
+                                        <td class="boldTotal">25,964,429</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">우선주</th>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        </div>
+                            <h4>주주분포 사항</h4>
+                            <div class="tb_fr">
+                                <table class="tb" >
+            
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="firstTh">구분</th>
+                                            <th scope="col" class="centerTh">성명</th>
+                                            <th scope="col" class="centerTh">주식의 종류</th>
+                                            <th scope="col">소유주식수(주)</th>
+                                            <th scope="col" class="centerTh">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr class="total">
+                                            <th scope="row" class="total" rowspan="2">합계</th>
+                                            <td></td>
+                                            <td class="ac">보통주</td>
+                                            <td>183,578,826</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="total">
+                                            <td></td>
+                                            <td class="ac">우선주</td>
+                                            <td>0</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">최대주주</th>
+                                            <td class="note"><strong>삼성전자</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>134,027,281</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="9">특수관계인</th>
+                                            <td class="note"><strong>삼성생명</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>25,701,199</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>삼성생명(특별계정)</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>492,409</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>삼성전기</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>18,150,855</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>삼성SDI</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>3,173,594</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>제일기획</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>994,314</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>삼성물산</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>989,379</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>정진택</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>27,006</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>윤종현</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>19,292</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="note"><strong>배진한</strong></td>
+                                            <td class="note">보통주</td>
+                                            <td>3,497</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+            </div>
+                            <h4>배당내역</h4>
+                            <div class="tb_fr">
+                                <table class="tb" >
+            
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="firstTh" colspan="2">구분</th>
+                                            <th scope="col">2021년(제48기)</th>
+                                            <th scope="col">2020년 (제47기)</th>
+                                            <th scope="col" class="lastPad">2019년 (제46기)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" colspan="2">주당액면가액 (원)</th>
+                                            <td>1,000</td>
+                                            <td>5,000</td>
+                                            <td class="lastPad">5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">(연결)당기순이익 (백만원)</th>
+                                            <td>-1,445,068</td>
+                                            <td>-1,482,446</td>
+                                            <td class="lastPad">-1,310,842</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">주당순이익 (원)</th>
+                                            <td>-2,174</td>
+                                            <td>-2,454</td>
+                                            <td class="lastPad">-2,170</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">현금배당금총액 (백만원)</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">주식배당금총액 (백만원)</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">(연결)현금배당성향 (%)</th>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2" class="txtTop">현금배당수익률 (%)</th>
+                                            <td class="normalTd">보통주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="normalTd">우선주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2" class="txtTop">주식배당수익률 (%)</th>
+                                            <td class="normalTd">보통주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="normalTd">우선주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2" class="txtTop">주당현금배당금 (원)</th>
+                                            <td class="normalTd">보통주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="normalTd">우선주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="2" class="txtTop">주당 주식배당 (주)</th>
+                                            <td class="normalTd">보통주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="normalTd">우선주</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="lastPad">-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+            </div>
                     </div>
                 </section>
             </div>

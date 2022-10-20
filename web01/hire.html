@@ -55,6 +55,31 @@
     height: 60px; line-height: 60px; text-align: center; font-size:20px; border-radius:32px; visibility:hidden; transition-duration:0.8s; }
     .to_top:hover { background-color: deepskyblue; }
     .to_top.on { visibility: visible; }
+
+    .tb_fr { width: auto;  }
+    .tb { display:table; border-collapse: collapse; margin-left: auto; margin-right: auto; width: 1200px; height: 200px; margin-bottom: 150px;}
+    .tb tr { display:table-row; }
+    .tb td, .tb th { display:table-cell; text-align: center; 
+    border-bottom:1px solid #333; line-height: 30px; }
+    .tb td a { display:block; color:#333; overflow:hidden; text-overflow: ellipsis; 
+    white-space:nowrap; padding-right: 10px; width:330px; }
+    .tb .nt_num { width:60px; }
+    .tb .nt_tit { width:340px; }
+    .tb .nt_auth { width: 80px; }
+    .tb .nt_afte { width: 110px; }
+    .tb td.nt_tit { width:340px; text-align: left;}
+    .tb tr:first-child th { border-top:3px solid #333; }
+    .tb tr:last-child td { border-bottom:3px solid #333; }
+
+    .pic_lst li a .pic_fr { display:inline;width: auto; height:450px; overflow:hidden; background-color:#dcdcdc;   }
+    .pic_lst li a img { display: block; width: 600px; height:450px ;  float:right; margin-right: 300px;}
+    .mind1{ clear: both; }
+    .aaa{width: 30%; float: left;}
+    .aaa2{width: 30%; float: left; margin-left: 20px; margin-right: 20px;}
+    .aaa3{width: 30%; float: left;}
+    
+    
+    
     </style>
         <link rel="stylesheet" href="footer.css">
         <script>
@@ -157,6 +182,115 @@
             <section class="page">
                 <div class="page_wrap">
                     <h2 class="page_title">채용공고</h2>
+                    <div class="tb_fr">
+                        <table class="tb" >		
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">마감일</th>
+                                    <th scope="col">진행상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>              
+                                <tr class="">
+                                    <td><span class="txtNum">63</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&Seq=3861&mac=36f7ef639bc2626b27b852625605c6d5">미래선박 분야 석/박사 채용</a></td>
+                                    <td><span class="txtNum">2022.10.04</span></td>
+                                    <td><span class="txtNum">2022.10.17</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">62</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&Seq=3841&mac=4b644939b635a8eff243be5051b0c3e5">제 148기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.10.03</span></td>
+                                    <td><span class="txtNum">2022.10.23</span></td>
+                                    <td>진행</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">61</span></td>
+                                    <td class="type">신입</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&Seq=3761&mac=b8e26d79f46c687927fd5d2b5de2fa40">신입사원 채용</a></td>
+                                    <td><span class="txtNum">2022.09.01</span></td>
+                                    <td><span class="txtNum">2022.09.14</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">60</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3781&amp;mac=ff8fe291bea423ecfaefa106f39ae542">제 147기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.09.01</span></td>
+                                    <td><span class="txtNum">2022.09.25</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">59</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3741&amp;mac=29e44c000754e0288000c4db6fe165b0">제 146기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.07.25</span></td>
+                                    <td><span class="txtNum">2022.08.21</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">58</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3723&amp;mac=5a19f29f14f6714c8ca5c438cf9c01c4">제 145기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.06.23</span></td>
+                                    <td><span class="txtNum">2022.07.17</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">57</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3701&amp;mac=26b990eb42c5c0b5df5a9271e92662a2">생산관리/안전관리 채용</a></td>
+                                    <td><span class="txtNum">2022.06.21</span></td>
+                                    <td><span class="txtNum">2022.07.04</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">56</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3681&amp;mac=c7ad31bbbe6ac2acf25bd4d5d340455a">제 144기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.05.27</span></td>
+                                    <td><span class="txtNum">2022.06.19</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">55</span></td>
+                                    <td class="type">신입</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3641&amp;mac=5f71d2926696d9593b0cc99547ba4a2e">제 143기 직업기술생 모집</a></td>
+                                    <td><span class="txtNum">2022.04.22</span></td>
+                                    <td><span class="txtNum">2022.05.15</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                
+                                <tr class="">
+                                    <td><span class="txtNum">54</span></td>
+                                    <td class="type">신입/경력</td>
+                                    <td class="title"><a href="http://www.samsungshi.com/Kor/Employ/notice_view.aspx?Page=1&amp;Seq=3621&amp;mac=3117da9e88f1de50ea8daf8038e9675a">평택P-PJT 하이테크현장 계약직 채용</a></td>
+                                    <td><span class="txtNum">2022.04.19</span></td>
+                                    <td><span class="txtNum">2022.05.02</span></td>
+                                    <td>마감</td>
+                                </tr>
+                                                            
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                    
+    </div>
                 </div>
             </section>
             </div>
@@ -183,7 +317,24 @@
                 </div>
                 <section class="page">
                     <div class="page_wrap">
-                        <h2 class="page_title">입사지원가이드</h2>
+                        <h2 class="page_title">채용절차</h2>
+                        <div class="con_wrap">
+                            <h2>사무직</h2><br>
+                            <h3>지원자격</h3><br>
+                            <p>1.학력/연령/성별에 제한없이 지원이 가능합니다. (3급은 공인기관의 어학 성적 보유必)<br>
+                                2.해외여행에 결격사유가 없고, 병역기피 사실이 없어야 합니다.</p> <br><br>   
+                            <h3>지원방법</h3><br>
+                            <p>삼성채용 홈페이지<a href="http://www.samsungcareers.com">(http://www.samsungcareers.com)</a> 채용공고를 통해 모집합니다.</p><br><br>
+                            <h3>전형절차</h3><br>
+                            <p>1.지원서 작성 - 2.직무적합성평가 - 3.삼성직무적성평가 - 4.면접전형 - 5.건강검진 - 6.최종합격</p>
+                        </div><br><br><br><br><br>
+                        <div class="con_wrap2">
+                            <h2>생산직</h2><br>
+                            <h3>모집시기</h3><br>
+                            <p>인력 소요 발생시 모집합니다.</p><br>
+                            <h3>전형절차</h3>
+                            <p>1.지원서 작성 - 2.직무적합성평가 - 3.삼성직무적성평가 - 4.면접전형 - 5.건강검진 - 6.최종합격</p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -210,8 +361,28 @@
                 </div>
                 <section class="page">
                     <div class="page_wrap">
-                        <h2 class="page_title">인사제도</h2>
-                    </div>
+                        <h2 class="page_title">인재상</h2><br><br> 
+                        <div class="con_wrap">          
+                            <ul class="pic_lst">
+                                <li>
+                                    <a href="">
+                                        <div class="pic_fr"><img src="./img/인재상.jpg" alt="pic1"></div></a></li></ul></div>
+                                        <h3 class="pic_tit"><h3>삼성이 지향하는 인재는<br>열린마음,열린머리,<br>열린행동을 지닌<br>열린사람입니다.</h3></h3><br><br>
+                                        <div class="mind1">
+                                            <ul>
+                                                <li class="aaa">
+                                                <h4>열린마음</h4>
+                                            <p>이는 비뚤어진 것은 바로 고치도록 당당히 말하는 용기 있는 사람, 더불어 사는 삶을 실천할 수 있는 따뜻한 사람, 집단과 개인 이기주의를 버리고 서로를 격려하며 이끌어 주는 진정한 동료애를 발휘할 줄 아는 사람을 말합니다.<br><br>
+                                                열린 사람은 동료에게, 고객에게, 이 사회와 국가, 그리고 인류를 향해 활짝 열린 마음을 갖고 있는 사람입니다.</p></li>
+                                            <li class="aaa2"><h4>열린마음</h4>
+                                            <p>진취적인 정신을 지니고 자기계발을 위해 부단히 노력하는 사람, 변화를 리드하며 항상 새로운 것을 받아들이고 창조함 으로써 조직과 사회에 활력과 신선함을 주는 사람입니다.<br><br>
+                                                열린 사람은 다양한 관점에서 바라볼 수 있는 폭넓은 지식과 유연한 사고방식 으로 자신의 전문 분야뿐 아니라 다른 분야에 대해서도 이해하려고 노력하는 열린 사고를 갖고 있는 사람입니다.</p></li>
+                                            <li class="aaa3"><h4>열린마음</h4>
+                                            <p>명확한 목표와 목적의식 속에 자신의 위치를 입체적, 국제적으로 파악하는 자세를 가지고 치열한 무한 경쟁의 열린 시대에 살아남을 수 있는 기본기와 능력을 갖춘 사람인 것입니다.<br><br>
+                                                열린 사람은 국제화된 사고와 에티켓을 갖춘 열린 행동을 통해 세계를 무대로 인류 사회에 공헌하는 것을 목표로 합니다.</p></li>
+                                            
+                                            </ul>
+                                            </div>
                 </section>
             </div>
             
