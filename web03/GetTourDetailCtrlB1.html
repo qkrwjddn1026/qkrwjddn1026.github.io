@@ -1,0 +1,272 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장소 상세보기</title>
+    
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&amp;display=swap" rel="stylesheet">
+<style>
+body, html { font-family: 'Noto Sans KR', sans-serif; }
+.table { min-width:960px; }
+#logo2 { display:block; width:73px; height:67px; background-color:white; background-image:url("https://www.ui4u.go.kr/common/img/common/logo_tour.png");;
+background-size:85% auto; background-repeat:no-repeat; background-position:center center; }
+#nav-group { border-bottom:3px solid #ddd; }
+#gnb .navbar-link::after { content:""; display:none; }
+#sidebar .navbar { display:block; width:100%; background-color:transparent; }
+#sidebar .navbar-item { float:none; clear:both; display:block; width:100%; }
+#frm1.search_form { border-top:2px solid #ddd; border-bottom:2px solid #ddd; height:60px; padding-top:10px; padding-bottom:10px;  }
+#frm1 .inline { width:70%; float:left; margin-right:2%; }
+#frm1.search_form .inline { display:inline-block; width:auto; } 
+.navbar-item.has-dropdown.is-hoverable { min-width:110px; position:static; }
+.navbar-item.has-dropdown.is-hoverable a { font-weight:800; }
+.navbar-item.has-dropdown.is-hoverable.single { position:relative; }
+#nav .navbar-dropdown.cate { min-width:940px; width:940px; position:absolute; left:50px; }
+#nav .navbar-dropdown.single { min-width:150px; width:150px; left:auto; top:68px; }
+#nav .navbar-dropdown.cate a { display:inline-block; padding:8px; margin-right:20px;  
+width:120px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+font-weight:500; }
+#nav .navbar-dropdown.single a { display:inline-block; width:150px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+font-weight:500; }
+p.title { font-size:1.4rem; }
+p.subtitle { font-size:1.1rem; }
+.item_com {   overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;
+  -webkit-line-clamp: 3;  -webkit-box-orient: vertical; font-size:0.9rem; }
+.breadcrumb ul li:last-child { padding-right:1.5rem; }
+p.comment2 { max-width:400px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+max-height:40px; }
+.hidden_item { display:none; }
+.star_data { height:36px; position:relative; background-image:url("/pro03/data/star.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+.navbar-menu{margin-left: 50px;}
+#star_group { width:100px; height:36px; position:relative; }
+#star_group #stardate { width:100px; height:36px; background-image:url("/pro03/data/star1.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+#star_group #starrate { width:100px; height:36px; background-image:url("/pro03/data/star.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+#star10:checked ~ #star_group #starrate { width:100px; }
+#star9:checked ~ #star_group #starrate { width:90px; }
+#star8:checked ~ #star_group #starrate { width:80px; }
+#star7:checked ~ #star_group #starrate { width:70px; }
+#star6:checked ~ #star_group #starrate { width:60px; }
+#star5:checked ~ #star_group #starrate { width:50px; }
+#star4:checked ~ #star_group #starrate { width:40px; }
+#star3:checked ~ #star_group #starrate { width:30px; }
+#star2:checked ~ #star_group #starrate { width:20px; }
+#star1:checked ~ #star_group #starrate { width:10px; }
+
+#star_btn { width:100px; height:36px; position:absolute; z-index:20; top:0; left:0;  }
+#star_btn label { display:block; width:10px; height:36px; position:relative; float:left; }
+</style>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+  
+
+ 
+    <div id="nav-group">
+      <div class="container"> 
+        <nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+          <div class="navbar-brand">
+          <a class="navbar-item" id="logo2" href="index.html">
+          </a>
+        
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start" id="gnb">
+            <!-- ajax로 메뉴 로딩하여 추가하기 -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="GetTourCateListCtrlA.html" class="navbar-link">
+                  관광
+              </a>
+              <div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA2.html">원도봉산</a><a href="GetTourDetailCtrlA1.html">수락산</a></div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="GetTourCateListCtrlB.html" class="navbar-link cate">
+                  체험
+              </a> 
+                 <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">서계 박세당 고택 체험</a><a href="GetTourDetailCtrlB2.html">천상병예술제</a></div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="GetTourCateListCtrlC.html" class="navbar-link cate">
+                  행사
+              </a>
+                 <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">의정부 예술의 전당</a><a href="GetTourDetailCtrlC2.html">회룡문화제</a></div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a href="GetTourCateListCtrlD.html" class="navbar-link cate">
+                  축제
+              </a>
+              <div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">의정부 가야금 축제</a><a href="GetTourDetailCtrlD2.html">음악극축제</a></div>
+            </div>
+            
+            <div class="navbar-item has-dropdown is-hoverable single">
+              <a class="navbar-link">
+                  게시판
+              </a>
+              <div class="navbar-dropdown single">
+                 <a class="navbar-item" href="noticeList.html">
+                     공지사항
+                 </a>
+                 <a class="navbar-item" href="qnaList.html">
+                     묻고 답하기
+                 </a>
+                 <a class="navbar-item" href="impressList.html">
+                     이용후기
+                 </a>
+                 <a class="navbar-item" href="dataBankList.html">
+                     자료실
+                 </a>
+                 <a class="navbar-item" href="online.html">
+                     온라인 상담
+                 </a>
+              </div> 
+            </div>
+            
+          </div>
+          
+          <div class="navbar-end" id="tnb">
+            <div class="navbar-item">
+            
+              <div class="buttons">
+                <a href="agree.html" class="button is-primary">
+                <strong>Sign up</strong>
+                </a>
+                <a href="login.html" class="button is-light">
+                Log in
+                </a>
+              </div>
+               
+               
+             </div>
+        </div>
+          </div>
+        </nav>
+      
+      </div>
+    </div>
+	<nav class="breadcrumb" aria-label="breadcrumbs" style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+	  <ul style="float:right;">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="tourList.html">전체 장소</a></li>
+	    <li><a href="GetTourCateListCtrlB.html">
+ 			 
+			
+			
+			<span>체험</span>
+			
+			
+			
+			
+			
+			
+			
+	    </a></li>
+	    <li class="is-active"><a href="#" aria-current="page">서계 박세당 고택 체험</a></li>
+	  </ul>
+	</nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<table class="table">
+      			
+      			<tbody><tr>
+				
+				<td>
+					<img src="img/tour6.png" class="lazy" onerror="this.style.display='none'" alt="배너">
+					<!-- onerror="this.style.display='none'"  -->
+	      		</td>
+					
+		    	</tr>
+		    	
+				
+		  </tbody>
+		</table>
+      	</div>
+		<table class="table">
+		   <tbody>
+		    <tr>
+		      <th style="min-width:180px;">번호</th>
+		      <td>8</td>
+		    </tr>
+		    <tr>
+		      <th>분류</th>
+		      <td>
+   				 
+				
+				
+				<span>체험</span>
+				
+				
+				
+				
+				
+				
+				
+		      </td>
+		    </tr>
+		    <tr>
+		      <th>장소 번호</th>
+		      <td><p>B0008</p>
+		      	<input type="hidden" name="tourno" id="tourno" value="B0008">
+		      </td>
+		    </tr>
+		    <tr> 
+		      <th>장소명</th>
+		      <td>
+				서계 박세당 고택 체험
+		      </td>	
+		    </tr>
+		    <tr>
+		      <th>장소 주요 설명</th>
+		      <td><p>서계 박세당(1629~1703년)은, 조선 후기의 실학파들이 대개 그러했던 것처럼 완고한 시대 기류를 개혁하려다가 좌절한 지식인의 전형이다.
+32세 때인 1660년에 문과에 장원한 후 부수찬, 예조참의, 승지를 거처 홍문관교리, 병조좌랑을 역임하는 등 영달의 삶을 살았지만
+결국 학문적 신념 때문에 40세에 관직에서 물러나 불우한 말년을 맞게 된다.</p></td>
+		    </tr>
+		    <tr>
+		      <th>장소 상세 설명</th>
+		      <td><p>생애의 치적이라 할 수 있는 ‘사변록(思辨綠)’을 저술하였지만 당대의 통치이데올로기였던 주자학을 비판한 저서였기 때문에
+결국 그는 ‘사문난적(斯文亂賊:못된 글로 세상을 어지럽히는 도적)’으로 몰려 유배되는 처지가 된다.
+70세에는 중추부 판사로서 ‘기로소(耆老所:벼슬한 70세 이상 원로 선비들의 모임장소)에 들어가는 영예도 얻었지만
+1703년 백헌 이경석의 신도비명을 지은 일과 사변록 저술로 인한 필화에 걸려 유배형을 받게 된다.
+그의 아들 박태보(朴泰輔)가 숙종 때 인현왕후의 폐출에 반대하다가 처형당했던 것이 감안되어 유배되지는 않았지만 그해 가을에 향년 75세로 사망했다.
+
+박세당은 장암동의 은거지 사랑채에서 ‘색경(穡經)’을 집필했다. 뛰어난 농사관련 저술로 평가되는 책이다.
+사랑채 앞마당에는 커다란 은행나무 한 그루가 방문객과 손님을 맞는데 안내판의 설명에 의하면 수령이 430년이다.
+박세당이 사랑채에서 후학양성과 집필활동을 하는 동안 이 나무는 한창 자라고 있었을 것이다.
+</p></td>
+		    </tr>
+		  </tbody>
+		</table>
+		<div class="buttons">
+		  <a href="tourList.html" class="button is-info">전체 목록</a>
+		  <a href="GetTourCateListCtrlB.html" class="button is-info">카테고리 목록</a>
+		  
+		</div>
+    </div>
+  </section>
+ 
+	
+  
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+  
+</body></html>

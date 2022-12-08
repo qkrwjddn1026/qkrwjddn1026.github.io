@@ -1,0 +1,301 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장소 상세보기</title>
+    
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&amp;display=swap" rel="stylesheet">
+<style>
+body, html { font-family: 'Noto Sans KR', sans-serif; }
+.table { min-width:960px; }
+#logo2 { display:block; width:73px; height:67px; background-color:white; background-image:url("https://www.ui4u.go.kr/common/img/common/logo_tour.png");;
+background-size:85% auto; background-repeat:no-repeat; background-position:center center; }
+#nav-group { border-bottom:3px solid #ddd; }
+#gnb .navbar-link::after { content:""; display:none; }
+#sidebar .navbar { display:block; width:100%; background-color:transparent; }
+#sidebar .navbar-item { float:none; clear:both; display:block; width:100%; }
+#frm1.search_form { border-top:2px solid #ddd; border-bottom:2px solid #ddd; height:60px; padding-top:10px; padding-bottom:10px;  }
+#frm1 .inline { width:70%; float:left; margin-right:2%; }
+#frm1.search_form .inline { display:inline-block; width:auto; } 
+.navbar-item.has-dropdown.is-hoverable { min-width:110px; position:static; }
+.navbar-item.has-dropdown.is-hoverable a { font-weight:800; }
+.navbar-item.has-dropdown.is-hoverable.single { position:relative; }
+#nav .navbar-dropdown.cate { min-width:940px; width:940px; position:absolute; left:50px; }
+#nav .navbar-dropdown.single { min-width:150px; width:150px; left:auto; top:68px; }
+#nav .navbar-dropdown.cate a { display:inline-block; padding:8px; margin-right:20px;  
+width:120px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+font-weight:500; }
+#nav .navbar-dropdown.single a { display:inline-block; width:150px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+font-weight:500; }
+p.title { font-size:1.4rem; }
+p.subtitle { font-size:1.1rem; }
+.item_com {   overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;
+  -webkit-line-clamp: 3;  -webkit-box-orient: vertical; font-size:0.9rem; }
+.breadcrumb ul li:last-child { padding-right:1.5rem; }
+p.comment2 { max-width:400px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
+max-height:40px; }
+.hidden_item { display:none; }
+.star_data { height:36px; position:relative; background-image:url("/pro03/data/star.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+.navbar-menu{margin-left: 50px;}
+#star_group { width:100px; height:36px; position:relative; }
+#star_group #stardate { width:100px; height:36px; background-image:url("/pro03/data/star1.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+#star_group #starrate { width:100px; height:36px; background-image:url("/pro03/data/star.png"); 
+background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
+#star10:checked ~ #star_group #starrate { width:100px; }
+#star9:checked ~ #star_group #starrate { width:90px; }
+#star8:checked ~ #star_group #starrate { width:80px; }
+#star7:checked ~ #star_group #starrate { width:70px; }
+#star6:checked ~ #star_group #starrate { width:60px; }
+#star5:checked ~ #star_group #starrate { width:50px; }
+#star4:checked ~ #star_group #starrate { width:40px; }
+#star3:checked ~ #star_group #starrate { width:30px; }
+#star2:checked ~ #star_group #starrate { width:20px; }
+#star1:checked ~ #star_group #starrate { width:10px; }
+
+#star_btn { width:100px; height:36px; position:absolute; z-index:20; top:0; left:0;  }
+#star_btn label { display:block; width:10px; height:36px; position:relative; float:left; }
+</style>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+  
+
+ 
+	<div id="nav-group">
+		<div class="container"> 
+			<nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+			  <div class="navbar-brand">
+				<a class="navbar-item" id="logo2" href="index.html">
+				</a>
+			
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				</a>
+			  </div>
+			
+			  <div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start" id="gnb">
+					<!-- ajax로 메뉴 로딩하여 추가하기 -->
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlA.html" class="navbar-link">
+							  관광
+						</a>
+						<div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA2.html">원도봉산</a><a href="GetTourDetailCtrlA1.html">수락산</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlB.html" class="navbar-link cate">
+							  체험
+						</a> 
+						   <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">서계 박세당 고택 체험</a><a href="GetTourDetailCtrlB2.html">천상병예술제</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlC.html" class="navbar-link cate">
+							  행사
+						</a>
+						   <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">의정부 예술의 전당</a><a href="GetTourDetailCtrlC2.html">회룡문화제</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlD.html" class="navbar-link cate">
+							  축제
+						</a>
+						<div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">의정부 가야금 축제</a><a href="GetTourDetailCtrlD2.html">음악극축제</a></div>
+					</div>
+					
+					<div class="navbar-item has-dropdown is-hoverable single">
+						<a class="navbar-link">
+							  게시판
+						</a>
+						<div class="navbar-dropdown single">
+							 <a class="navbar-item" href="noticeList.html">
+								   공지사항
+							 </a>
+							 <a class="navbar-item" href="qnaList.html">
+								   묻고 답하기
+							 </a>
+							 <a class="navbar-item" href="impressList.html">
+								   이용후기
+							 </a>
+							 <a class="navbar-item" href="dataBankList.html">
+								   자료실
+							 </a>
+							 <a class="navbar-item" href="online.html">
+								   온라인 상담
+							 </a>
+						</div> 
+					</div>
+					
+				</div>
+				
+				<div class="navbar-end" id="tnb">
+					<div class="navbar-item">
+			  	
+						<div class="buttons">
+						  <a href="agree.html" class="button is-primary">
+							<strong>Sign up</strong>
+						  </a>
+						  <a href="login.html" class="button is-light">
+							Log in
+						  </a>
+						</div>
+					   
+					   
+					 </div>
+			</div>
+			  </div>
+			</nav>
+		
+		</div>
+	</div>
+	<nav class="breadcrumb" aria-label="breadcrumbs" style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+	  <ul style="float:right;">
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="tourList.html">전체 장소</a></li>
+	    <li><a href="GetTourCateListCtrlA.html">
+ 			 
+			
+			<span>관광</span>
+			
+			
+			
+			
+			
+			
+			
+			
+	    </a></li>
+	    <li class="is-active"><a href="#" aria-current="page">수락산</a></li>
+	  </ul>
+	</nav>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">장소 상세보기</h1>
+      	<div id="con">
+      		<table class="table">
+      			
+      			<tbody><tr>
+				
+				<td>
+					<img src="img/tour1.png" class="lazy" onerror="this.style.display='none'" alt="배너">
+					<!-- onerror="this.style.display='none'"  -->
+	      		</td>
+					
+		    	</tr>
+		    	
+				
+		  </tbody>
+		</table>
+      	</div>
+		<table class="table">
+		   <tbody>
+		    <tr>
+		      <th style="min-width:180px;">번호</th>
+		      <td>2</td>
+		    </tr>
+		    <tr>
+		      <th>분류</th>
+		      <td>
+   				 
+				
+				<span>관광</span>
+				
+				
+				
+				
+				
+				
+				
+				
+		      </td>
+		    </tr>
+		    <tr>
+		      <th>장소 번호</th>
+		      <td><p>A0001</p>
+		      	<input type="hidden" name="tourno" id="tourno" value="A0001">
+		      </td>
+		    </tr>
+		    <tr> 
+		      <th>장소명</th>
+		      <td>
+				수락산
+		      </td>	
+		    </tr>
+		    <tr>
+		      <th>장소 주요 설명</th>
+		      <td><p>경기도 의정부시와 서울 노원구, 남양주시 별내면의 경계가 되고 있다.
+기암괴석이 웅장한 수락산은 화강암 능선이 아름다운 바위산이다. 수목은 울창하지 않으나 산세가 수려하고 계곡이 깊다.</p></td>
+		    </tr>
+		    <tr>
+		      <th>장소 상세 설명</th>
+		      <td><p>기차바위, 철모바위 등 생긴 모양에 따라 이름 붙여진 다양한 바위를 감상할 수 있으며,
+산행 내내 시야를 가리지 않는 탁 트인 전망은 수락산을 수도권 명산의 반열에 당당히 오르게 한다.
+해발 637.7m로 그리 높지 않고 산행 역시 지루하지 않아 사계절 많은 등산객이 찾고 있다.
+
+가볼만한 풍광과 명승지로는 동쪽에 금류계곡이 있고, 서쪽 비탈면에는 쌍암사, 남쪽엔 계림암, 동쪽은 내원암이 있다.
+
+또한 수락산 기슭에서 살았던 박세당 선생의 흔적을 따라가는 역사기행도 가능하다.
+박세당 고택에서 출발해 그의 아들 문렬공 박태보의 위패를 모신 노강서원을 거쳐
+박세당 선생이 존경하던 매월당 김시습의 자취를 찾아 중창한 석림사를 둘러보고 산 정상에 오를 수 있다.</p></td>
+		    </tr>
+		  </tbody>
+		</table>
+		<div class="buttons">
+		  <a href="tourList.html" class="button is-info">전체 목록</a>
+		  <a href="GetTourCateListCtrlA.html" class="button is-info">카테고리 목록</a>
+		  
+		</div>
+    </div>
+  </section>
+  <script>
+  //image Lazy Loading : 실제로 사용자 화면에 보여질 필요가 있을 때까지 이미지 로딩을 지연하는 것으로 네트워크 대역폭을 줄이는 방법
+  /* document.addEventListener("DOMContentLoaded", function() {
+	  var lazyloadImages = document.querySelectorAll("img.lazy");    
+	  var lazyloadThrottleTimeout;
+	  
+	  function lazyload () {
+	    if(lazyloadThrottleTimeout) {
+	      clearTimeout(lazyloadThrottleTimeout);
+	    }    
+	    
+	    lazyloadThrottleTimeout = setTimeout(function() {
+	        var scrollTop = window.pageYOffset;
+	        lazyloadImages.forEach(function(img) {
+	            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+	              img.src = img.dataset.src;
+	              img.classList.remove('lazy');
+	            }
+	        });
+	        if(lazyloadImages.length == 0) { 
+	          document.removeEventListener("scroll", lazyload);
+	          window.removeEventListener("resize", lazyload);
+	          window.removeEventListener("orientationChange", lazyload);
+	        }
+	    }, 20);
+	  }
+	  
+	  document.addEventListener("scroll", lazyload);
+	  window.addEventListener("resize", lazyload);
+	  window.addEventListener("orientationChange", lazyload);
+	}); */
+  </script>
+	
+  
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+  
+</body></html>

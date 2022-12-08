@@ -6,6 +6,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&amp;display=swap" rel="stylesheet">
 <style>
 body, html { font-family: 'Noto Sans KR', sans-serif; }
+.content {text-align: center; background-image: url("");}
+.vdo {width: 100%; height: 100%;}
+.navbar-menu{margin-left: 50px;}
 .table { min-width:960px; }
 #logo2 { display:block; width:73px; height:67px; background-color:white; background-image:url("https://www.ui4u.go.kr/common/img/common/logo_tour.png");;
 background-size:85% auto; background-repeat:no-repeat; background-position:center center; }
@@ -62,177 +65,109 @@ background-repeat:no-repeat; background-position:left center; background-size:10
   	
 
  
-<div id="nav-group">
-	<div class="container"> 
-		<nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
-		  <div class="navbar-brand">
-		    <a class="navbar-item" id="logo2" href="index.html">
-		    </a>
-		
-		    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-		      <span aria-hidden="true"></span>
-		      <span aria-hidden="true"></span>
-		      <span aria-hidden="true"></span>
-		    </a>
-		  </div>
-		
-		  <div id="navbarBasicExample" class="navbar-menu">
-		    <div class="navbar-start" id="gnb">
-		    	<!-- ajax로 메뉴 로딩하여 추가하기 -->
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateA.html" class="navbar-link">
-				      	관광
-				    </a>
-				    <div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA1.html">원도봉산</a><a href="GetTourDetailCtrlA2.html">수락산</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateB.html" class="navbar-link cate">
-				      	체험
-				    </a> 
-		   		    <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">천상병예술제</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateC.html" class="navbar-link cate">
-				      	행사
-				    </a>
-		   		    <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">회룡문화제</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateD.html" class="navbar-link cate">
-				      	축제
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">음악극축제</a></div>
-				</div>
-				<div href="GetTourCateListCtrlCateE.html" class="navbar-item has-dropdown is-hoverable">
-			    	<a class="navbar-link cate">
-				      	숙박
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate05"><a href="GetTourDetailCtrlE1.html">숙박</a></div>
-				</div>	
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateF.html" class="navbar-link cate">
-				      	음식
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate06"></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateG.html" class="navbar-link cate">
-				      	쇼핑
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate07"></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable single">
-			    	<a a href="GetTourCateListCtrlCateH.html"class="navbar-link">
-				      	함께하는 의정부
-				    </a>
-					<div class="navbar-dropdown single">
-					     <a class="navbar-item" href="noticeList.html">
-					       	공지사항
-					     </a>
-					     <a class="navbar-item" href="GetQnaListCtrl.html">
-					       	묻고 답하기
-					     </a>
-					     <a class="navbar-item" href="GetImpressListCtrl.html">
-					       	이용후기
-					     </a>
-					     <a class="navbar-item" href="GetDatabankListCtrl.html">
-					       	자료실
-					     </a>
-					     <a class="navbar-item" href="/impress/online.html">
-					       	온라인 상담
-					     </a>
-				    </div> 
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable single">
-				    <a class="navbar-link">
-				      	숙박 음식 특산물
-				    </a>
-				
-				    <div class="navbar-dropdown single">
-				      <a class="navbar-item">
-				                  의정부소개
-				      </a>
-				      <a class="navbar-item">
-				        의정부 특산물
-				      </a>
-				      <a class="navbar-item">
-				        관광홍보대사
-				      </a>
-				      <hr class="navbar-divider">
-				      <a class="navbar-item">
-				        의정부 숙박
-				      </a>
-				    </div>
+	<div id="nav-group">
+		<div class="container"> 
+			<nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+			  <div class="navbar-brand">
+				<a class="navbar-item" id="logo2" href="index.html">
+				</a>
+			
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				</a>
 			  </div>
-			</div>
 			
-			<div class="navbar-end" id="tnb">
-			  <div class="navbar-item">
-			  	
-			 <div class="buttons">
-			   <a href="agree.html" class="button is-primary">
-			     <strong>Sign up</strong>
-			   </a>
-			   <a href="login.html" class="button is-light">
-			     Log in
-			   </a>
-			 </div>
-			
-			
-		  </div>
-		</div>
-		  </div>
-		</nav>
-	<script>
-	$(document).ready(function(){
-		$.ajax({
-			url:"/pro03/MemuLoadCtrl.html",
-			type:"POST",
-			enctype:"UTF-8",
-			datatype:"json",
-			processData:false,
-			contentType:false, 
-			cache:false,
-			success:function(data){
-				$(".navbar-dropdown.cate").empty();
-				var trans = $.parseJSON(data);
-				console.log(trans);
-				$.each(trans, function(key, value){
-					if(key=="data"){
-						for(var i=0;i<value.length;i++){
-							if(value[i].cate=="A"){
-								$("#cate01").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="B"){
-								$("#cate02").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="C"){
-								$("#cate03").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="D"){
-								$("#cate04").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="E"){
-								$("#cate05").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="F"){
-								$("#cate06").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="G"){
-								$("#cate07").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							}
-						}
-					}
-				});
+			  <div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start" id="gnb">
+					
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlA.html" class="navbar-link">
+							  관광
+						</a>
+						<div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA2.html">원도봉산</a><a href="GetTourDetailCtrlA1.html">수락산</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlB.html" class="navbar-link cate">
+							  체험
+						</a> 
+						   <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">서계 박세당 고택 체험</a><a href="GetTourDetailCtrlB2.html">천상병예술제</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlC.html" class="navbar-link cate">
+							  행사
+						</a>
+						   <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">의정부 예술의 전당</a><a href="GetTourDetailCtrlC2.html">회룡문화제</a></div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a href="GetTourCateListCtrlD.html" class="navbar-link cate">
+							  축제
+						</a>
+						<div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">의정부 가야금 축제</a><a href="GetTourDetailCtrlD2.html">음악극축제</a></div>
+					</div>
+					
+					<div class="navbar-item has-dropdown is-hoverable single">
+						<a class="navbar-link">
+							  게시판
+						</a>
+						<div class="navbar-dropdown single">
+							 <a class="navbar-item" href="noticeList.html">
+								   공지사항
+							 </a>
+							 <a class="navbar-item" href="qnaList.html">
+								   묻고 답하기
+							 </a>
+							 <a class="navbar-item" href="impressList.html">
+								   이용후기
+							 </a>
+							 <a class="navbar-item" href="dataBankList.html">
+								   자료실
+							 </a>
+							 <a class="navbar-item" href="online.html">
+								   온라인 상담
+							 </a>
+						</div> 
+					</div>
+					
+				</div>
 				
-			}
-		});
-	});
-	</script>
+				<div class="navbar-end" id="tnb">
+					<div class="navbar-item">
+			  	
+						<div class="buttons">
+						  <a href="agree.html" class="button is-primary">
+							<strong>Sign up</strong>
+						  </a>
+						  <a href="login.html" class="button is-light">
+							Log in
+						  </a>
+						</div>
+					   
+					   
+					 </div>
+			</div>
+			  </div>
+			</nav>
+		
+		</div>
 	</div>
-</div>
-	<h2>park jung woo테스트 입니다.</h2>
+	<div class="content">
+		
+		<img src="img/main.png" alt="메인이미지">
+			<figure class="main_video">
+                <video src="video/[TV경기방송] 의정부시 홍보영상.mp4" autoplay muted class="vdo"></video>
+			</figure>
+	</div>
 	
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      <strong>의정부시 문화관광</strong><hr>우)11622 경기도 의정부시 시민로 1 (의정부동)<br>
+
+	  전화 : 031-828-2114팩스 : 031-828-2119청각장애 : 070-7947-3939 <br>
+	  Copyright © 2016 Uijeongbu CITY All Rights Reserved.
+     
     </p>
   </div>
 </footer>

@@ -23,12 +23,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdownMenu.min.js"></script>
 <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
-<link rel="stylesheet" href="resources/css/normalize.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
 <script>
@@ -70,7 +69,7 @@ max-height:40px; }
 .hidden_item { display:none; }
 .star_data { height:36px; position:relative; background-image:url("/pro03/data/star.png"); 
 background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
-
+.navbar-menu{margin-left: 50px;}
 #star_group { width:100px; height:36px; position:relative; }
 #star_group #stardate { width:100px; height:36px; background-image:url("/pro03/data/star1.png"); 
 background-repeat:no-repeat; background-position:left center; background-size:100px auto; }
@@ -90,7 +89,7 @@ background-repeat:no-repeat; background-position:left center; background-size:10
 #star_btn { width:100px; height:36px; position:absolute; z-index:20; top:0; left:0;  }
 #star_btn label { display:block; width:10px; height:36px; position:relative; float:left; }
 </style>
-<script src="https://code.jquery.com/jquery-latest.js"></script>
+
 <meta class="foundation-mq"></head>
 <body>
 	<header id="header">
@@ -102,167 +101,91 @@ background-repeat:no-repeat; background-position:left center; background-size:10
 
 <!-- 헤더 내용 기술 -->
 <div id="nav-group">
-	<div class="container"> 
-		<nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
-		  <div class="navbar-brand">
-		    <a class="navbar-item" id="logo2" href="index.html">
-		    </a>
-		
-		    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-		      <span aria-hidden="true"></span>
-		      <span aria-hidden="true"></span>
-		      <span aria-hidden="true"></span>
-		    </a>
-		  </div>
-		
-		  <div id="navbarBasicExample" class="navbar-menu">
-		    <div class="navbar-start" id="gnb">
-		    	<!-- ajax로 메뉴 로딩하여 추가하기 -->
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateA.html" class="navbar-link">
-				      	관광
-				    </a>
-				    <div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA1.html">원도봉산</a><a href="GetTourDetailCtrlA2.html">수락산</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateB.html" class="navbar-link cate">
-				      	체험
-				    </a> 
-		   		    <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">천상병예술제</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateC.html" class="navbar-link cate">
-				      	행사
-				    </a>
-		   		    <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">회룡문화제</a></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateD.html" class="navbar-link cate">
-				      	축제
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">음악극축제</a></div>
-				</div>
-				<div href="GetTourCateListCtrlCateE.html" class="navbar-item has-dropdown is-hoverable">
-			    	<a class="navbar-link cate">
-				      	숙박
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate05"><a href="GetTourDetailCtrlE1.html">숙박</a></div>
-				</div>	
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateF.html" class="navbar-link cate">
-				      	음식
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate06"></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable">
-			    	<a href="GetTourCateListCtrlCateG.html" class="navbar-link cate">
-				      	쇼핑
-				    </a>
-		    		<div class="navbar-dropdown cate" id="cate07"></div>
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable single">
-			    	<a a href="GetTourCateListCtrlCateH.html"class="navbar-link">
-				      	함께하는 의정부
-				    </a>
-					<div class="navbar-dropdown single">
-					     <a class="navbar-item" href="noticeList.html">
-					       	공지사항
-					     </a>
-					     <a class="navbar-item" href="GetQnaListCtrl.html">
-					       	묻고 답하기
-					     </a>
-					     <a class="navbar-item" href="GetImpressListCtrl.html">
-					       	이용후기
-					     </a>
-					     <a class="navbar-item" href="GetDatabankListCtrl.html">
-					       	자료실
-					     </a>
-					     <a class="navbar-item" href="/impress/online.html">
-					       	온라인 상담
-					     </a>
-				    </div> 
-				</div>
-				<div class="navbar-item has-dropdown is-hoverable single">
-				    <a class="navbar-link">
-				      	숙박 음식 특산물
-				    </a>
-				
-				    <div class="navbar-dropdown single">
-				      <a class="navbar-item">
-				                  의정부소개
-				      </a>
-				      <a class="navbar-item">
-				        의정부 특산물
-				      </a>
-				      <a class="navbar-item">
-				        관광홍보대사
-				      </a>
-				      <hr class="navbar-divider">
-				      <a class="navbar-item">
-				        의정부 숙박
-				      </a>
-				    </div>
-			  </div>
-			</div>
-			
-			<div class="navbar-end" id="tnb">
-			  <div class="navbar-item">
-			  	
-			 <div class="buttons">
-			   <a href="agree.html" class="button is-primary">
-			     <strong>Sign up</strong>
-			   </a>
-			   <a href="login.html" class="button is-light">
-			     Log in
-			   </a>
-			 </div>
-			
-			
-		  </div>
-		</div>
-		  </div>
-		</nav>
-	<script>
-	$(document).ready(function(){
-		$.ajax({
-			url:"/pro03/MemuLoadCtrl.html",
-			type:"POST",
-			enctype:"UTF-8",
-			datatype:"json",
-			processData:false,
-			contentType:false, 
-			cache:false,
-			success:function(data){
-				$(".navbar-dropdown.cate").empty();
-				var trans = $.parseJSON(data);
-				console.log(trans);
-				$.each(trans, function(key, value){
-					if(key=="data"){
-						for(var i=0;i<value.length;i++){
-							if(value[i].cate=="A"){
-								$("#cate01").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="B"){
-								$("#cate02").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="C"){
-								$("#cate03").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="D"){
-								$("#cate04").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="E"){
-								$("#cate05").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="F"){
-								$("#cate06").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="G"){
-								$("#cate07").append("<a href='/pro03/GetTourDetailCtrl.html?no="+value[i].no+"'>"+value[i].place+"</a>");
-							}
-						}
-					}
-				});
-				
-			}
-		});
-	});
-	</script>
-	</div>
+  <div class="container"> 
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav">
+      <div class="navbar-brand">
+      <a class="navbar-item" id="logo2" href="index.html">
+      </a>
+    
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start" id="gnb">
+        <!-- ajax로 메뉴 로딩하여 추가하기 -->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="GetTourCateListCtrlA.html" class="navbar-link">
+              관광
+          </a>
+          <div class="navbar-dropdown cate" id="cate01"><a href="GetTourDetailCtrlA2.html">원도봉산</a><a href="GetTourDetailCtrlA1.html">수락산</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="GetTourCateListCtrlB.html" class="navbar-link cate">
+              체험
+          </a> 
+             <div class="navbar-dropdown cate" id="cate02"><a href="GetTourDetailCtrlB1.html">서계 박세당 고택 체험</a><a href="GetTourDetailCtrlB2.html">천상병예술제</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="GetTourCateListCtrlC.html" class="navbar-link cate">
+              행사
+          </a>
+             <div class="navbar-dropdown cate" id="cate03"><a href="GetTourDetailCtrlC1.html">의정부 예술의 전당</a><a href="GetTourDetailCtrlC2.html">회룡문화제</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a href="GetTourCateListCtrlD.html" class="navbar-link cate">
+              축제
+          </a>
+          <div class="navbar-dropdown cate" id="cate04"><a href="GetTourDetailCtrlD1.html">의정부 가야금 축제</a><a href="GetTourDetailCtrlD2.html">음악극축제</a></div>
+        </div>
+        
+        <div class="navbar-item has-dropdown is-hoverable single">
+          <a class="navbar-link">
+              게시판
+          </a>
+          <div class="navbar-dropdown single">
+             <a class="navbar-item" href="noticeList.html">
+                 공지사항
+             </a>
+             <a class="navbar-item" href="qnaList.html">
+                 묻고 답하기
+             </a>
+             <a class="navbar-item" href="impressList.html">
+                 이용후기
+             </a>
+             <a class="navbar-item" href="dataBankList.html">
+                 자료실
+             </a>
+             <a class="navbar-item" href="online.html">
+                 온라인 상담
+             </a>
+          </div> 
+        </div>
+        
+      </div>
+      
+      <div class="navbar-end" id="tnb">
+        <div class="navbar-item">
+        
+          <div class="buttons">
+            <a href="agree.html" class="button is-primary">
+            <strong>Sign up</strong>
+            </a>
+            <a href="login.html" class="button is-light">
+            Log in
+            </a>
+          </div>
+           
+           
+         </div>
+    </div>
+      </div>
+    </nav>
+  
+  </div>
 </div>
     <!-- End Top Bar -->
 
@@ -337,16 +260,16 @@ background-repeat:no-repeat; background-position:left center; background-size:10
 	<div class="footer-nav-right">
 	  <ul class="footer-nav-menu-icons">
 	    <li class="footer-nav-item">
-	      <a href="get-involved/support.html"><img class="footer-social-icon" src="/myapp/resources/icon/email-icon.svg" alt=""></a>
+	      <a href="get-involved/support.html"><img class="footer-social-icon" src="" alt=""></a>
 	    </li>
 	    <li class="footer-nav-item">
-	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="/myapp/resources/icon/facebook-icon.svg" alt=""></a>
+	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="" alt=""></a>
 	    </li>
 	    <li class="footer-nav-item">
-	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="/myapp/resources/icon/twitter-icon.svg" alt=""></a>
+	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="" alt=""></a>
 	    </li>
 	    <li class="footer-nav-item">
-	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="/myapp/resources/icon/youtube-icon.svg" alt=""></a>
+	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="" alt=""></a>
 	    </li>
 	  </ul>
 	</div>
