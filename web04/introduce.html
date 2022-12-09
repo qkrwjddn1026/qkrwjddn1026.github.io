@@ -1,0 +1,229 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<!-- 헤드 부분 인클루드 -->
+    
+
+
+
+
+<!-- <script src="include/jquery.js"></script>
+<script src="include/foundation.js"></script>
+<link href="inculde/foundation.css" rel="stylesheet" /> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-prototype.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-rtl.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordion.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordionMenu.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdownMenu.min.js"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="resources/css/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script>
+  $(document).ready(function(){
+	  $(document).foundation();
+  });
+</script>
+<style>
+ul { list-style:none; }
+
+#gnb > ul > li[role="menuitem"] { height:38px; }
+#gnb > ul > li.menu-text[role="menuitem"] { padding-top:0px; padding-bottom:0px; }
+
+.h1 { padding-top:0.9rem; padding-bottom:0.3rem; }
+.container { clear:both; width:1200px; margin:0 auto; }
+.container::after { content:""; display:block; width:100%; clear:both; }
+
+#table1 th { border-bottom:1px solid #fff; }
+
+.footer-nav {	background-color:#2d2d2d; height:80px; box-sizing:border-box; overflow:hidden; }
+.footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
+.footer-nav > article > div { float:left; }
+.footer-nav-left { color:#fff; width:25%; line-height:80px; }
+.footer-nav-center {
+	width:50%;
+}
+.footer-nav-right {
+	width:25%; 
+}
+#footer .footer-nav-left .footer-copyright {
+	line-height:80px;
+}
+
+#footer > article > div > ul > li.footer-nav-item { 
+	float:left; width:auto; padding:1.8rem;  
+	min-width:40px;
+}
+#footer > article > div.footer-nav-right > ul > li.footer-nav-item {
+	width:25%; height:25%;
+}
+.content {text-align: center;}
+</style>
+    <style>
+    .lead, .subheader { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    </style>
+<meta class="foundation-mq"></head>
+<body>
+    <header id="header">
+        <nav class="top-bar">
+           <div class="top-bar-left" id="gnb">
+             <ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="qc4j75-e">
+               <li class="menu-text" role="menuitem"><a href="index.html" class="logo">POSCO</a></li>
+               <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Community">
+                <a href="#">COMPANY</a>
+                <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+                    <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="introduce.html">회사소개</a></li>
+                </ul>
+            </li>
+               <li role="menuitem"><a href="#">Product</a></li>
+               <li role="menuitem"><a href="#">Service</a></li>
+               <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Community">
+                    <a href="#">Community</a>
+                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="boardList.html">공지사항</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#">자료실</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#">질문 및 답변</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="freeList.html">자유게시판</a></li>
+                    </ul>
+                </li>
+               <li role="menuitem"><a href="#">Human</a></li>
+             </ul>
+           </div>
+                    
+             <div class="top-bar-right">
+               <ul class="menu">
+                  <li><a href="login.html">로그인</a></li>
+                  <li><a href="agree.html">회원가입</a></li>
+               </ul>
+             </div>
+          </nav>
+        </header>
+<div class="content">
+    <h1>회사소개</h1>
+    <hr>
+    <h4>포스코 경영이념</h4>
+    <div class="image">
+        <img src="img/vision.jpg" class="mobile-hide" alt="더불어 함께 발전하는 기업시민">
+        
+    </div>
+    <p>포스코는 '더불어 함께 발전하는 기업시민'을 추구합니다. 포스코 스스로가 사회 구성원의 일원이 되어 임직원, 주주, 고객, 공급사, 협력사, 지역사회 등 여러 이해관계자와 더불어 함께 발전하고, 배려와 공존, 공생의 가치를 함께 추구해 나가고자 합니다.</p>
+    
+    <h4>경영비전</h4>
+    <div class="image">
+        <img src="img/vision2.jpg" class="mobile-hide" alt="with Posco">
+    </div>
+    <p>더불어 함께 발전하는 기업시민 의미를 담고 있는 With의 의미를 시각적으로 전달하기 위해 W는 두 사람이 손을 맞잡고 있는 모습을 이미지화해 공감적 어울림이 꾸준히 지속됨을 표현하였습니다. 따뜻한 오렌지색은 함께 발전하는 긍정 에너지를 담았습니다.</p>
+    
+    
+    <h4>활동영역</h4>
+    <div class="image">
+        <img src="img/vision3.jpg" class="mobile-hide" alt="Business Biz 파트너, Society 사회공동체, People 포스코그룹 임직원">
+    </div>
+    <p>비즈니스 파트너와 함께 Win-Win 할 수 있는 공생가치를 창출하여 강건한 산업생태계를 조성하고, 사회공동체의 일원으로 경제적 이윤 창출을 넘어 사회문제 해결에 적극적으로 동참하며, 신뢰와 창의의 조직문화로 임직원이 보람과 행복을 느끼는 회사를 만들어갑니다.</p>
+    
+    <h4>인재상</h4>
+    <div class="image">
+        <img src="img/vision4.jpg" class="mobile-hide" alt="실천의식과 배려의 마인드를 갖춘 창의적 인재">
+    </div>
+    <p>기업시민 포스코의 구성원인 임직원은 '실천' 의식을 바탕으로 협업하여 시너지를 창출하고, 겸손과 존중의 마인드로 '배려'할 줄 알며, 유연한 사고와 지속적 학습으로 도전적 아이디어를 제시하는 '창의'적 인재를 지향합니다.</p>
+   
+    <h4>행동강령</h4>
+    <div class="image">
+        <img src="img/vision5.jpg" class="mobile-hide" alt="실질(형식보다 실질 우선), 실행(보고보다 실행 중시), 실리(명분보다 실리 추구)">
+      
+    </div>
+    <p>실질을 우선하고 실행을 중시하며 실리를 추구해 나가는 가치를 실천해 나갑니다. 형식보다는 실질을 우선하고, 보고보다는 실행을 중시하고, 명분보다는 실리를 추구함으로써 가치경영, 상생경영, 혁신경영을 실현해 나갑니다.</p>
+    
+   <h4>핵심가치</h4>
+    <div class="image">
+        <img src="img/vision6.jpg" class="" alt="안전(Safety), 상생(win-win), 윤리(Ethics), 창의(Creativity) ">
+    </div> 
+    <p>포스코의 핵심가치는 '안전', '상생', '윤리', '창의'입니다.<br> '안전'은 인간존중을 우선으로 직책보임자부터 솔선수범하여 실천우선의 안전행동을 체질화하는 것입니다. '상생'은 배려와 나눔을 실천하고 공생발전을 추구하며, 사회적 가치창출을 통하여 함께 지속성장하는 것입니다. '윤리'는 사회 구성원 간 상호신뢰를 기반하여 정도를 추구하고 신상필벌의 원칙을 지키는 것입니다. '창의'는 열린사고로 개방적인 협력을 통하여 문제를 주도적으로 해결하는 것입니다.</p>
+    
+    <h4>포스코 경영이념 체계도</h4>
+    <div class="image diagram">
+        <img src="img/vision7.jpg" class="mobile-hide" alt="">
+
+        <div class="hide">
+            <h5>경영이념</h5>
+            <p>더불어 함께 발전하는 기업시민</p>
+            
+            <h5>비전</h5>
+            <p>With POSCO</p>
+            
+            <h5>개혁방향</h5>
+            <ul>
+                <li>Business with POSCO, 비즈니스 파트너와 가치를 함께 만드는 포스코</li>
+                <li>Society with POSCO, 더 나은 사회를 함께 만드는 포스코</li>
+                <li>People with POSCO, 신뢰와 창의 문화를 함께 만드는 포스코</li>
+            </ul>
+            <h5>경영원칙</h5>
+            <p>가치경영, 상생경영, 혁신경영</p>
+            <h5>행동강령</h5>
+            <p>실질, 실행, 실리</p>
+            <h5>핵심가치</h5>
+            <p>안전,,상생,윤리,창의</p>
+        </div>
+    </div>
+
+    <h4>포스코 기업시민헌장</h4>
+    <p>'더불어 함께 발전하는 기업시민' 경영이념 실현을 위한 지향점과 실천원칙</p>
+    <div class="image mt40" style="background:#fff;">
+        <img src="img/vision8.jpg" width="100%" alt="포스코 기업시민헌장. 기업의 경영활동은 사회를 기반으로 이루어지며, 사회와 조화를 통해 성장하고 영속할 수 있다. 우리는 사회의 자원을 활용하여 성장한 기업이 사회공동체의 일원으로서 경제적 이윤 창출을 넘어 사회문제 해결에 동참하고 인류의 번영과 더 나은 세상을 만들어 가는데 기여하는 것이 올바른 길이라고 믿는다. 포스코는 더불어 함께 발전하는 기업시민 경영이념하에 고객, 구성원, 주주 등 모든 이해관계자와 소통하고 공감하면서 끊임없이 변화하고 혁신하여 궁극적으로 더 큰 기업가치를 창출하며 지속 성장하고자 한다. 이에 기업시민 포스코는 모든 경영활동에 있어 다음 원칙을 준수한다. 하나, 비즈니스 파트너와 함께 강건한 산업 생태계를 조성한다. 모든 사업에서 공정, 투명, 윤리의 가치를 실천한다. 배려와 존중의 자세로 협력사, 공급사와 협업하고 동반성장한다. 최고의 제품과 서비스를 제공하여 고객성공을 지원한다. 둘, 사회문제 해결과 더 나은 사회 구현에 앞장선다. 사회가 직면한 문제에 공감하고 기업차원의 역할을 다한다. 지역사회 발전과 환경보호를 위한 공익적 활동을 전개한다. 이웃을 배려하는 마음으로 모든 구성원이 나눔활동에 적극 참여한다. 셋, 신뢰와 창의의 조직 문화로 행복하고 보람있는 회사를 만든다. 안전하고 쾌적한 근무환경을 조성하여 구성원의 건강과 안녕을 도모한다. 공정한 인사와 안정적 노사관계로 신뢰와 화?d의 조직문화를 선도한다. 다양성을 포용하고 일과 삶이 균형을 이루는 행복한 일터를 구현한다. 2019년 7월 25일 포스코">
+    </div>
+    
+</div>
+
+</div>
+
+</div>
+
+<footer id="footer" class="footer-nav row expanded collapse">
+<article class="ft_wrap">
+	<div class="footer-nav-left">
+	  <p class="footer-copyright">©2020 Foundation Yetinauts</p>
+	</div>
+	<div class="footer-nav-center">
+	  <ul class="footer-nav-menu">
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://get.foundation/sites/docs/">Docs</a>
+	    </li>
+	  </ul>
+	</div>
+	<div class="footer-nav-right">
+	  <ul class="footer-nav-menu-icons">
+	    <li class="footer-nav-item">
+	      <a href="get-involved/support.html"><img class="footer-social-icon" src="/myapp/resources/icon/email-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="/myapp/resources/icon/facebook-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="/myapp/resources/icon/twitter-icon.svg" alt=""></a>
+	    </li>
+	    <li class="footer-nav-item">
+	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="/myapp/resources/icon/youtube-icon.svg" alt=""></a>
+	    </li>
+	  </ul>
+	</div>
+</article>
+</footer>    
+</body></html>
