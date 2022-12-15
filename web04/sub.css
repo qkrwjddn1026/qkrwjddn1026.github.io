@@ -1,5 +1,4 @@
 
-.logo {color: #666666;}
 ul { list-style:none; }
 
 #gnb > ul > li[role="menuitem"] { height:38px; }
@@ -11,7 +10,7 @@ ul { list-style:none; }
 
 #table1 th { border-bottom:1px solid #fff; }
 
-.footer-nav {	background-color:#2d2d2d; height:180px; box-sizing:border-box;  }
+.footer-nav {	background-color:#2d2d2d; height:180px; box-sizing:border-box; }
 .footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
 .footer-nav > article > div { float:left; }
 .footer-nav-left { color:#fff; width:25%; line-height:80px; }
@@ -32,9 +31,4 @@ ul { list-style:none; }
 #footer > article > div.footer-nav-right > ul > li.footer-nav-item {
 	width:25%; height:25%;
 }
-
-footer {background-color: #2d2d2d; }
-
-.lead, .subheader { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-
 
