@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+        });
+    </script>
+    <style>
+        .item-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .img-wrap {
+            text-align: center;
+            width: 600px;
+            height: 400px;
+        }
+
+        .img-wrap p {
+            text-align: center;
+            
+            font-size: 10px;
+        }
+    </style>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3286251, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav class="top-bar">
+           <div class="top-bar-left" id="gnb">
+             <ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="qc4j75-e">
+               <li class="menu-text" role="menuitem"><a href="index.html" class="logo">POSCO</a></li>
+               <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Community">
+                <a href="#">COMPANY</a>
+                <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+                    <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="introduce.html">회사소개</a></li>
+                </ul>
+            </li>
+               <li role="menuitem"><a href="product.html">Product</a></li>
+               <li role="menuitem"><a href="#">Service</a></li>
+               <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Community">
+                    <a href="#">Community</a>
+                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="boardList.html">공지사항</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#">자료실</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="#">질문 및 답변</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="freeList.html">자유게시판</a></li>
+                    </ul>
+                </li>
+               <li role="menuitem"><a href="#">Human</a></li>
+             </ul>
+           </div>
+                    
+             <div class="top-bar-right">
+               <ul class="menu">
+                  <li><a href="login.html">로그인</a></li>
+                  <li><a href="agree.html">회원가입</a></li>
+               </ul>
+             </div>
+          </nav>
+        </header>
+
+    <div class="item-wrap">
+        <a href="#" title="posco" class="itembox">
+            <div class="img-wrap">
+                <img src="http://product.posco.com/product/kor/ui/images/01_industry/img_industry_car01.jpg" alt="차체용">
+                <p class="name">차체용</p>
+                <p class="desc">차체는 차량 사고 시 충격을 흡수 및 분산하여 탑승자의 안전을 지켜주는 역할을 합니다.</p>
+            </div>
+            <div class="img-wrap">
+                <img src="http://product.posco.com/product/kor/ui/images/01_industry/img_industry_car02.jpg" alt="샤시용">
+                <p class="name">샤시용</p>
+                <p class="desc">샤시는 자동차 성능의 가장 기본이라 할 수 있는 주행 관련 부분을 담당</p>
+            </div>
+        </a>
+        <div class="img-wrap">
+            <img src="http://product.posco.com/product/kor/ui/images/01_industry/img_industry_car03.jpg" alt="전기차 배터리 팩용">
+            <p class="name">전기차 배터리 팩용</p>
+            <p class="desc">배터리는 전기 에너지를 화학 에너지 형태로 모아두었다가 필요할 때에 다시 전기로 전환</p>
+        </div>
+        </a>
+        <a href="#" title="posco" class="itembox">
+            <div class="img-wrap">
+                <img src="http://product.posco.com/product/kor/ui/images/01_industry/img_industry_car04.jpg" alt="전기차 구동모터용">
+                <p class="name">전기차 구동모터용</p>
+                <p class="desc">구동모터는 자동차의 엔진에 해당하며, 전류를 통해 구동 축이 회전하도록 만들어주는 부품</p>
+            </div>
+        </a>
+        <a href="#" title="posco" class="itembox">
+            <div class="img-wrap">
+                <img src="http://product.posco.com/product/kor/ui/images/01_industry/img_industry_car05.jpg" alt="수소연료전지용">
+                <p class="name">수소연료전지용</p>
+                <p class="desc">수소연료전지는 수소를 연료로 사용하여 전기 에너지를 만드는 장치입니다.</p>
+            </div>
+        </a>
+    </div>
+
+
+    <footer id="footer" class="footer-nav row expanded collapse">
+        <article class="ft_wrap">
+          <div class="footer-nav-left">
+            <p class="footer-copyright">©2020 Foundation Yetinauts</p>
+          </div>
+          <div class="footer-nav-center">
+            <ul class="footer-nav-menu">
+              <li class="footer-nav-item">
+                <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://get.foundation/sites/docs/">Docs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-right">
+            <ul class="footer-nav-menu-icons">
+              <li class="footer-nav-item">
+                <a href="get-involved/support.html"><img class="footer-social-icon" src="${path3 }/resources/icon/email-icon.svg" alt=""></a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="${path3 }/resources/icon/facebook-icon.svg" alt=""></a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="${path3 }/resources/icon/twitter-icon.svg" alt=""></a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="${path3 }/resources/icon/youtube-icon.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </footer>
+</body>
+
+</html>
