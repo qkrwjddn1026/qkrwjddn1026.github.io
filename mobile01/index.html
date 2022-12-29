@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>jQuery 모바일 앱</title>
-    <title>KANGOL®</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>NIKE</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico" />
        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -19,60 +18,24 @@
             crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
-    <link rel="manifest" href="manifest.json" />
+        <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
-    <link rel="apple-touch-icon" href="favicon-57.png" sizes="57x57">
-    <link rel="apple-touch-icon" href="favicon-76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="favicon-120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="favicon-152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="favicon-180.png" sizes="180x180">
-    <link rel="apple-touch-startup-image" href="startup.png">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="노아와 방주" />
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png">
+        <link rel="manifest" href="assets/icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-    <meta name="application-name" content="노아와 방주">
-    <meta name="subject" content="노아와 방주">
-    <meta name="keywords" content="예비 물품, 피난 물품, 비상 물품">
-    <meta name="description" content="노아와 방주는 비상시 또는 사고, 재난, 전쟁 등으로 인하여 발생할 것을 대비하여 꼭 알고 있어야 할 정보와 제품을 알리고, 판매하는 웹 애플리케이션입니다.">
-    <meta name="url" content="https://qkrwjddn1026.github.io/mobile01">
-    <meta name="author" content="park jung woo">
-    <meta name="email" content="qkrwjddn1026@naver.com">
-    <meta name="theme-color" content="#f1718c" />
-    <meta name="robots" content="index, flow">
-
-    <!-- 앱 미리보기 정보 -->
-    <!--iOS-->
-    <meta property="al:ios:url" content=" ios 앱 URL" />
-    <meta property="al:ios:app_store_id" content="ios 앱스토어 ID" /> 
-    <meta property="al:ios:app_name" content="ios 앱 이름" /> 
-
-    <!--Android-->
-    <meta property="al:android:url" content="안드로이드 앱 URL" />
-    <meta property="al:android:app_name" content="안드로이드 앱 이름" />
-    <meta property="al:android:package" content="안드로이드 패키지 이름" /> 
-    <meta property="al:web:url" content="안드로이드 앱 URL" />
-
-    <!-- 그래픽 특성별 연동 설정 코드 -->
-    <!-- 오픈 그래프 -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qkrwjddn1026.github.io/mobile01">
-    <meta property="og:title" content="노아와 방주">
-    <meta property="og:site_name" content="노아와 방주">
-    <meta property="og:image" content="siteimage.jpg">
-    <meta property="og:image:width" content="1000">
-    <meta property="og:image:height" content="400">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="video">
-    <meta name="twitter:title" content="노아와 방주">
-    <meta name="twitter:description" content="노아와 방주는 비상시 또는 사고, 재난, 전쟁 등으로 인하여 발생할 것을 대비하여 꼭 알고 있어야 할 정보와 제품을 알리고, 판매하는 웹 애플리케이션입니다.">
-    <meta name="twitter:image" content="siteimage.jpg">
-
+   
     <style>
         .page_tit{font-size: 5vw; clear: both; padding-bottom: 2rem;}
         .ui-header .ui-title {text-align: center;}
@@ -171,7 +134,18 @@
 
         .agree_fr { width: 80%px; white-space:pre-wrap; margin: 0 auto; padding: 24px; border:2px solid #eee; height:300px; overflow-y:auto; }
     
+
+        
         </style>
+         <!-- video -->
+        <style>
+        .jotbab-video-player { clear:both; }
+        .jotbab-video-player::after { content:""; display:block; clear:both; }
+        .vdo1-dimensions { width: 362px; height: 210px; margin: 0; padding: 0; min-width: 360px;  min-height: 202px; }
+        .vdo1-dimensions::after { content: ""; clear: both; display: block; }
+        .video-js .vjs-tech { display: block; width: 360px; height: 210px; min-width: 360px; min-height: 202px; }
+        </style>
+        <!-- video -->
 </head>
 
 <body class="ui-mobile-viewport ui-overlay-b">
@@ -281,7 +255,8 @@
         <ul class="listview" data-role="listview">
             <li class="ui-li-static ui-body-inherit ui-first-child"><a href="#page11" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개요</a></li>
             <li class="ui-li-static ui-body-inherit"><a href="#page12" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">역사</a></li>
-            <li class="ui-li-static ui-body-inherit ui-last-child"><a href="#page13" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">현황</a></li>
+            <li class="ui-li-static ui-body-inherit"><a href="#page13" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">현황</a></li>
+            <li class="ui-li-static ui-body-inherit ui-last-child"><a href="#page14" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">홍보 영상</a></li>
         </ul>
     </div>
 </div>
@@ -336,6 +311,7 @@
         <a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">회사 소개</a>
         <a href="#page11" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개요</a>
         <a href="#page13" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">현황</a>
+        
     
         <div class="container">
             <footer class="py-3 my-4">
@@ -383,6 +359,36 @@
             </footer>
         </div>
 </div>
+</div>
+
+<div id="page14" data-role="page" class="ui-page ui-page-theme-a">
+    <header data-role="header" class="ui-header" data-theme="b">
+        <a href="#page1" data-role="button" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left" role="button">Back</a>
+        <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+        <h1 role="heading" class="ui-title">홍보 영상</h1>
+    </header>
+    <div class="player">
+        <div class="jotbab-video-player">
+           <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}">
+               <source src="assets/video/vdo1.mp4" type="video/mp4" />
+           </video>
+        </div>
+        <div class="btn_lst" id="btn_lst">
+           <ul>
+               <li><span data-val="assets/video/vdo1.mp4">나이키 홍보영상1</span></li><br>
+               <li><span data-val="assets/video/vdo2.mp4">나이키 홍보영상2</span></li><br>
+               <li><span data-val="assets/video/vdo3.mp4">나이키 홍보영상3</span></li><br>
+           </ul>
+        </div>
+    </div>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script>
+    $(document).ready(function(){
+       $("#btn_lst li span").click(function(){
+           $("#vdo1_html5_api").attr("src", $(this).attr("data-val"));
+        });
+    });  
+     </script>
 </div>
 
 <div id="page2" data-role="page" class="ui-page ui-page-theme-a">
@@ -1828,6 +1834,7 @@
         </footer>
     </div>
 </div>
+
 </body>
 
 </html>
