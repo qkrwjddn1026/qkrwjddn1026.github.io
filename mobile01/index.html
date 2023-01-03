@@ -171,13 +171,13 @@
 
         .agree_fr { width: 80%px; white-space:pre-wrap; margin: 0 auto; padding: 24px; border:2px solid #eee; height:300px; overflow-y:auto; }
     
-
+        #page0 {background-color: lightgrey;}
         
         </style>
          <!-- video -->
         <style>
-        .jotbab-video-player { clear:both; }
-        .jotbab-video-player::after { content:""; display:block; clear:both; }
+        .pjw-video-player { clear:both; }
+        .pjw-video-player::after { content:""; display:block; clear:both; }
         .vdo1-dimensions { width: 362px; height: 210px; margin: 0; padding: 0; min-width: 360px;  min-height: 202px; }
         .vdo1-dimensions::after { content: ""; clear: both; display: block; }
         .video-js .vjs-tech { display: block; width: 360px; height: 210px; min-width: 360px; min-height: 202px; }
@@ -204,9 +204,9 @@
                         </a>
                     </li>
                     <li class="ui-block-c">
-                        <a href="#page3" data-icon="alert" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
+                        <a href="#page3" data-icon="navigation" data-theme="a" class="ui-btn ui-btn-icon-top ui-btn-up-a">
                             <span class="ui-btn-text">게시판</span>
-                            <span class="ui-icon ui-icon-alert ui-icon-shadow"></span>
+                            <span class="ui-icon ui-icon-navigation ui-icon-shadow"></span>
                         </a>
                     </li>
                     <li class="ui-block-d">
@@ -405,7 +405,7 @@
         <h1 role="heading" class="ui-title">홍보 영상</h1>
     </header>
     <div class="player">
-        <div class="jotbab-video-player">
+        <div class="pjw-video-player">
            <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}">
                <source src="assets/video/vdo1.mp4" type="video/mp4" />
            </video>
@@ -430,7 +430,7 @@
 
 <div id="page2" data-role="page" class="ui-page ui-page-theme-a">
     <header data-role="header" class="ui-header" data-theme="b">
-        <a href="#page1" data-role="button" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left" role="button">Back</a>
+        <a href="#page0" data-role="button" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left" role="button">Back</a>
         <a href="#page0" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
         <h1 role="heading" class="ui-title">제품 목록</h1>
     </header>
