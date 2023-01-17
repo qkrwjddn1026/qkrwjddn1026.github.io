@@ -1,0 +1,101 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>로그인</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/common.css">
+    
+    <style>
+    .title { padding-top:36px; padding-bottom:20px; }
+    </style>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+            <div class="in_container"> 
+              <a class="navbar-brand" href="index.html" id="logo">농심몰</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">농심몰<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="/product/cateA.html">라면</a>
+                      <a class="dropdown-item" href="/product/cateB.html">스낵</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/product/cateC.html">간편식</a>
+                      <a class="dropdown-item" href="/product/cateD.html">음료</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
+                      Community
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/board/noticeList.html">Notice</a>
+                        <a class="dropdown-item" href="/board/qnaList.html">Q&A</a>
+                        <a class="dropdown-item" href="#">Use After</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="btn btn-warning" href="login.html">로그인</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-warning" href="agree.html">회원가입</a>
+                      </li>
+                </ul>	    
+              </div>
+            </div>
+        </nav>
+    
+    <div class="content container" id="content">
+        <h2 class="title">로그인</h2>
+        <form name="frm1" id="frm1" action="/index.html" >
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>아이디</th>
+                        <td>
+                            <input type="text" name="cusId" id="cusId" placeholder="아이디(영문 소문자/숫자, 4~16자)" class="form-control" autofocus="" required="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="password" name="cusPw" id="cusPw" placeholder="비밀번호(영문 대소문자/숫자/특수문자 중 3가지 이상 조합, 8~16자)" class="form-control" required=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-group">
+                <input type="submit" name="submit-btn" class="btn btn-info" value="로그인">
+                <input type="reset" name="reset-btn" class="btn btn-info" value="취소">
+                <a href="agree.html" class="btn btn-danger">회원가입</a>
+            </div>
+        </form>	
+    </div>
+    
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc<br><strong>농심몰</strong></p>
+      </footer>
+    
+    </body></html>

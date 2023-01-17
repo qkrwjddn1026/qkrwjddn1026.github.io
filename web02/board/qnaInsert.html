@@ -1,0 +1,124 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>질문 쓰기</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../common.css">
+    <style>
+    .title { padding-top:36px; padding-bottom:20px; }
+    </style>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+    <body>
+     
+    
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+            <div class="in_container"> 
+              <a class="navbar-brand" href="../index.html" id="logo">농심몰</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">농심몰<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="/product/cateA.html">라면</a>
+                      <a class="dropdown-item" href="/product/cateB.html">스낵</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/product/cateC.html">간편식</a>
+                      <a class="dropdown-item" href="/product/cateD.html">음료</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
+                      Community
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/board/noticeList.html">Notice</a>
+                        <a class="dropdown-item" href="/board/qnaList.html">Q&A</a>
+                        <a class="dropdown-item" href="#">Use After</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="btn btn-warning" href="login.html">로그인</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-warning" href="agree.html">회원가입</a>
+                      </li>
+                </ul>	    
+              </div>
+            </div>
+        </nav>
+    
+    <div class="container-fluid" id="content">
+        <div class="row" id="content_row">
+            
+            
+            <main class="content container">
+            
+                <h2 class="title">질문 등록</h2>
+                <form name="frm1" id="frm1" action="/board/qnaList.html" >
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th><label for="title">질문 제목</label></th>
+                                <td><input type="text" name="title" id="title" placeholder="제목 입력" maxlength="100" class="form-control" required=""></td>
+                            </tr>
+                            <tr>
+                                <th><label for="content">질문 내용</label></th>
+                                <td>
+                                    <textarea cols="100" rows="6" name="content" id="content" maxlength="600" class="form-control"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="author">작성자</label></th>
+                                <td>
+                                    <input type="text" name="author" id="author" class="form-control" value="pjw1234" readonly="" required="">
+                                    <input type="hidden" name="lev" id="lev" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="sec1">비밀글 여부</label></th>
+                                <td>
+                                    <input type="radio" name="sec" id="sec1" value="N" checked="">
+                                    <label for="">공개</label>
+                                    <input type="radio" name="sec" id="sec2" value="Y">
+                                    <label for="">비밀글</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">글 쓰기</button>
+                        <a href="/board/qnaList.html" class="btn btn-info">목록으로</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+    
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc<br><strong>농심몰</strong></p>
+      </footer>
+    
+    </body></html>

@@ -3,310 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WE DISPLAY</title>
-    
-   <!-- 메타포 -->
-   <meta name="description" content="위 디스플레이에서 다양한 디스플레이 설치사례와 전문업체를 살펴보고 견적을 문의해보세요.">
-   <meta name="keywords" content="WE DISPALY, 위디스플레이, 디스플레이, DISPLAY, 디스플레이그라운드, 디스플레이 플랫폼, 설치 사례, 견적 문의, 키오스크, 전자칠판, 전광판, DID모니터, 사이니지, 미디어파사드, 파사드, LED스크린, 비디오월, OLED, LED, LCD, 투명OLED, 투명디스플레이, 터치모니터, 광고판">
-   <!-- 오픈그래프 -->
-   <meta property="og:site_name" content="WE DISPLAY">
-   <meta property="og:title" content="WE DISPLAY">
-   <meta property="og:url" content="/">
-   <meta property="og:type" content="website">
-   <meta property="og:description" content="다양한 디스플레이 설치사례와 전문업체를 살펴보고 견적을 문의해보세요.">
-   <meta property="og:image" content="./img/icon/share.png">
-   <meta property="og:image:width" content="800">
-   <meta property="og:image:height" content="400">
-   <!-- 파비콘 -->
-   <link rel="shortcut icon" type="image/x-icon" href="./img/icon/favi.png">
-   <!-- 각 종 플러그인과 설정 파일 -->
-   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-   <!-- 구형 브라우저 html5태그 인식 -->
-   <script src="./js/html5shiv.js"></script>
-   <!-- 구형 브라우저에서 css animation 인식 -->
-   <script src="./js/prefixfree.min.js"></script>
-   <!-- 구형 브라우저에서 미디어쿼리 인식 -->
-   <script src="./js/respond.min.js"></script>
-   <!-- jquery 플러그인 연결 -->
-   <script src="./js/jquery-1.11.1.js"></script>
-   <link rel="stylesheet" href="./css/reset2.css">
-   <link rel="stylesheet" href="header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>웹 애플리케이션 포트폴리오</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1,Transition=12)">
+
+    <meta name="application-name" content="안효준">
+    <meta name="subject" content="안효준">
+    <meta name="keywords" content="포트폴리오">
+    <meta name="description" content="포트폴리오">
+    <meta name="url" content="https://hyojun-a.github.io">
+    <meta name="author" content="ahn hyo jun">
+    <meta name="email" content="wnsgy79@gmail.com">
+    <meta name="robots" content="index, flow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyojun-a.github.io">
+    <meta property="og:title" content="안효준">
+    <meta property="og:site_name" content="안효준">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="안효준">
+    <meta name="twitter:description" content="포트폴리오 홈페이지 입니다.">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
     <style>
-        /* header.css */
-        
-        
-    
-        /* content */
-        .page { clear:both; width: 100%; }
-        .page_wrap { width: 1200px; margin: 0 auto; }
-        #page1, #page3 { background-color:#ececec; }
-        .page_tit { text-align: center; font-size:32px; padding-top:1.2em; padding-bottom: 0.8em; }
-        .lst { clear:both; width: 1200px; }
-        .lst:after { content:""; display:block; clear: both;}
-        .lst li { margin-bottom: 40px; }
-        .lst li.left { float:left; width: 816px; height: 459px; }
-        .lst li.right { float:right; width:350px; height: 459px; }
-        .ico_lst { clear:both; width: 100%; overflow:hidden; }
-        .ico_lst li a { display:block; background-repeat: no-repeat; 
-        background-position:0px center; background-size:auto 80%; 
-        padding-left: 55px; }
-        .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
-        .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
-        .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
-        .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
-        .cate_com { color:#222; font-size:14px; overflow:hidden;
-        white-space:nowrap; text-overflow:ellipsis; }
-    
-        #page2 { background-color: rgba(230, 248, 255, 0.5); }
-        .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
-        .pic_lst:after { content:""; display:block; clear:both; }
-        .pic_lst li { float:left; position:relative; margin-bottom: 40px; }
-        .pic_lst li a { display:block; width: 360px; margin-right: 40px;
-        overflow: hidden; height: 300px; }
-        .pic_lst li a img { display:block; width:600px; margin-left: -120px; transition-duration:0.8s; }
-        .pic_lst li a:hover img { margin-left: 0; }
-        .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
-        .pic_lst li a:hover .hv_box { opacity:1; }
-        .pic_tit { position:absolute; top:30px; left: 30px; 
-        text-shadow:0px 0px 3px red; }
-        .pic_com { position:absolute; right:30px; bottom:30px; 
-            text-shadow:0px 0px 3px blue; }
-    
-        #page3 { background-repeat: no-repeat; 
-        background-size: cover; 
-        background-position:center center; height: 100vh; background-image:url("./img/bg_partners.jpg"); overflow:hidden; }
-        #page3 .page_wrap { width: 100%; }
-        .circle_lst { clear:both; width: 4455px; }
-        .circle_lst li { width: 200px; height: 200px; position:relative; border-radius:120px; overflow:hidden; background-color: #fff;
-        float:left; margin:28px;  }
-        .circle_lst.lst2 li { float:right; }
-        .circle_lst li a { display:block; width: 100%; height: 100%; }
-        .circle_lst li a img { display:block; width:160px; height:auto; 
-        position:absolute; top:50%; left: 20px; z-index:11; margin-top: -28px; }
-    
-        /* footer.css */
-        
-        </style>
-        <link rel="stylesheet" href="footer.css">
-    
-    
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                var ht = $(window).height();
-                var tp = $(this).scrollTop();
-                if(tp>=600){
-                    $(".hd").css("position","fixed");
-                }else{
-                    $(".hd").css("position","absolute   ");
-                }
-            });
-        });
-    </script>
+    * { margin: 0; padding: 0;}
+    body, html { width: 100%; overflow-x: hidden;}
+    .gradient-custom-2 {
+/* fallback for old browsers */
+background: #fbc2eb;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+}
+    </style>
 </head>
 <body>
-    <div class="wrap">
-        <header class="hd">
-            <div class="hd_wrap">
-                <a href="index.html" class="logo"><img src="./img/icon/h1_title.jpg" alt="로고"></a>
-                <nav class="tnb">
-                    <a href="login.html">로그인</a>
-                    <a href="join.html">회원가입</a>
-                    <a href="sitemap.html">사이트맵</a>
-                </nav>
-                <nav class="gnb">
-                    <ul>
-                        <li class="item1">
-                            <a href="company.html#page1" class="dp1">회사소개</a>
-                            <ul class="sub">
-                                <li><a href="company.html#page1">기업정보</a></li>
-                                <li><a href="company.html#page2">거제조선소 소개</a></li>
-                                <li><a href="company.html#page3">사업장안내</a></li>
-                            </ul>
-                        </li>
-                        <li class="item2">
-                            <a href="product" class="dp1">제품/기술</a>
-                            <ul class="sub">
-                                <li><a href="product.html#page1">조선/해양</a></li>
-                                <li><a href="product.html#page2">기술개발</a></li>
-                                <li><a href="product.html#page3">solution</a></li>
-                            </ul>
-                        </li>
-                        <li class="item3">
-                            <a href="investment" class="dp1">투자정보</a>
-                            <ul class="sub">
-                                <li><a href="investment.html#page1">재무정보</a></li>
-                                <li><a href="investment.html#page2">주가정보</a></li>
-                                <li><a href="investment.html#page3">지배구조</a></li>
-                            </ul>
-                        </li>
-                        <li class="item4">
-                            <a href="" class="dp1">인재채용</a>
-                            <ul class="sub">
-                                <li><a href="">채용공고</a></li>
-                                <li><a href="">입사지원가이드</a></li>
-                                <li><a href="">인사제도</a></li>
-                            </ul>
-                        </li>
-                        <li class="item5">
-                            <a href="management" class="dp1">지속가능경영</a>
-                            <ul class="sub">
-                                <li><a href="management.html#page1">안전경영</a></li>
-                                <li><a href="management.html#page2">준법경영</a></li>
-                                <li><a href="management.html#page3">지속가능 경영보고서</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            </div>
-        
-        <div class="content">
-            <figure class="vs">
-                <video src="./video/video01.mp4" autoplay muted class="vdo"></video>
-            </figure>
-            <section class="page" id="page1">
-                <div class="page_wrap">
-                    <h2 class="page_tit">조선해양산업의 미래</h2>
-                    <ul class="lst">
-                        <li class="left">
-                            <iframe name="vdo2" id="vdo2" width="816" height="459" src="https://www.youtube.com/embed/z68Tl9gSWko" frameborder="0"></iframe>
-                        </li>
-                        <li class="right">
-                            <ul class="ico_lst">    
-                                <li>
-                                    <a href="https://www.youtube.com/embed/r3k-dfJoL7s"  class="icon1" target="vdo2">
-                                        <h3 class="cate_tit">다양한 기술계발 사례</h3>
-                                            <p class="cate_com">카테고리설명1</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/embed/z68Tl9gSWko" class="icon2" target="vdo2">
-                                        <h3 class="cate_tit">뉴스/공지</h3>
-                                        <p class="cate_com">카테고리설명2</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/embed/JlbcrLIMLCw" class="icon3" target="vdo2">
-                                        <h3 class="cate_tit">홍보영상</h3>
-                                        <p class="cate_com">카테고리설명3</p>
-                                    </a>
-                                </li>   
-                            </ul>
-                        </li>
-                    </ul>
-                 </div>
-                </section>
-                <section class="page" id="page2">
-                    <div class="page_wrap">
-                        <h2 class="page_tit">기술개발 사례</h2>
-                        <ul class="pic_lst">
-                            <li>
-                                <a href="">
-                                    <img src="./img/samsung5.jpg" alt="Battry System Test-Bed" class="pic">
-                                    <div class="hv_box">
-                                        <h3 class="pic_tit">Battry System Test-Bed</h3>
-                                        <p class="pic_com">친환경 선박 기술 선도를 위해 칠서에 국내 최초로
-                                             선박용 대용량 배터리시스템 TEST-BED를 구축하였습니다. </p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./img/samsung1.jpg" alt="예인수조" class="pic">
-                                    <div class="hv_box">
-                                        <h3 class="pic_tit">예인수조</h3>
-                                        <p class="pic_com">대전에 위치한 세계 최대 규모 상업용 예인수조(길이 400m, 폭 14m, 깊이 7m)를
-                                              기반으로 선형·추진기의 성능 및 선박 운동·조종 안정성을 확보하고 연료 절감장치를 개발</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./img/samsung2.jpg" alt="공동수조" class="pic">
-                                    <div class="hv_box">
-                                        <h3 class="pic_tit">공동수조</h3>
-                                        <p class="pic_com">세계 최고 조선소의 위상에 부합하는 초일류 기술 확보를 
-                                            위해 1996년 자체기술로 국내 최대 규모의 저소음 공동수조를 완공했습니다.</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./img/samsung3.jpg" alt="모형제작" class="pic">
-                                    <div class="hv_box">
-                                        <h3 class="pic_tit">모형제작</h3>
-                                        <p class="pic_com">모형시험으로 실제 선박성능을 정확히 추정하려면 실제 선박 및 추진기를 축소한 정밀모형이 필요합니다.
-                                             이를 위해 초정밀 10축(5축 양축가동) CNC Machine와 5축 CNC Machine을 이용, 
-                                            10미터 길이 모형선과 최대 직경 0.3미터의 추진기를 정밀하고 신속하게 가공합니다.</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./img/samsung4.jpg" alt="KOLAS 시공승인" class="pic">
-                                    <div class="hv_box">
-                                        <h3 class="pic_tit">KOLAS 시공승인</h3>
-                                        <p class="pic_com">KOLAS(Korea Laboratory Accreditation Scheme)는1992년 8월 창설된 한국인정기구로 국가기술표준
-                                            원에서 운영하고 있으며, ISO/IEC 17025의 규정에 따라 시험기관을 평가하여 인정하는 기관입니다.</p>
-                                    </div>
-                                </a>
-                            </li>           
-                        </ul>
+
+              <div class="card">
+                <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height:200px;">
+                  <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+                      alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
+                      style="width: 150px; z-index: 1">
+                    <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+                      style="z-index: 1;">
+                      Edit profile
+                    </button>
+                  </div>
+                  <div class="ms-3" style="margin-top: 130px;">
+                    <h5>Andy Horwitz</h5>
+                    <p>New York</p>
+                  </div>
+                </div>
+                <div class="p-4 text-black" style="background-color: #f8f9fa;">
+                  <div class="d-flex justify-content-end text-center py-1">
+                    <div>
+                      <p class="mb-1 h5">253</p>
+                      <p class="small text-muted mb-0">Photos</p>
                     </div>
-                </section>
-                <section class="page" id="page3">
-                    <div class="page_wrap">
-                        <h2 class="page_tit">믿고 맡길 수 있는<br>삼성 중공업<br>전문 파트너스</h2>
-                        <ul class="circle_lst">
-                            <li><a href=""><img src="./img/icon/h1_title.jpg" alt="파트너스로고1" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고1.png" alt="파트너스로고2" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고2.jpg" alt="파트너스로고3" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고3.png" alt="파트너스로고4" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고4.jpg" alt="파트너스로고5" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고5.png" alt="파트너스로고6" class="thumb"></a></li>
-                            <li><a href=""><img src="./img/icon/파트너스로고6.png" alt="파트너스로고7" class="thumb"></a></li>
-                        </ul>
+                    <div class="px-3">
+                      <p class="mb-1 h5">1026</p>
+                      <p class="small text-muted mb-0">Followers</p>
                     </div>
-                </section>
-                <footer class="ft">
-                    <div class="ft_wrap">
-                        <div class="ft_logo"><img src="./img/icon/h1_title.jpg" alt="하단로고"></div>
-                        <div class="mid_box">
-                            <nav class="fnb">
-                                <a href="member01.html">개인정보 처리 방침</a>
-                                <a href="member02.html">이용약관</a>
-                                <a href="member03.html">이메일무단수집거부</a>
-                                <a href="member04.html">보안 신고</a>
-                                <a href="member05.html">윤리경영(부정제보)</a>
-                                <a href="member06.html">찾아오시는길</a>
-                            </nav>
-                            <p class="addr">
-                               경기도 성남시 분당구 판교로 227번길 23 대표번호 :031-5171-7000
-                                  
-                            </p>
-                            <p class="copyright">COPYRIGHT ⓒ LG DISPLAY CO., LTD. ALL RIGHTS RESERVED.</p>
-                        </div>
-                        <div class="sel_box">
-                            <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
-                                <option value="">패밀리 사이트</option>
-                                <option value="http://www.snsys.net">S&SYS</option>
-                                <option value="http://www.sghotel.co.kr/main.do">거제삼성호텔</option>
-                                <option value="https://www.samsungfocus.com/focus/home/mnlo/forwardPage.webx">focus</option>
-                                <option value="https://www.s-gips.co.kr/ep/Install/x_installAX_NEW.html">구매업무</option>
-                                <option value="http://audit.shi.samsung.co.kr:8282/kor_outside_src/default.asp">사이버감사팀</option>
-                                <option value="https://visit.samsungshi.com/visit/main.do">내방신청</option>
-                            </select>
-                        </div>
-                        <script>
-                        function sel_link(sel){
-                            location.href = sel.value;
-                        }
-                        </script>
+                    <div>
+                      <p class="mb-1 h5">478</p>
+                      <p class="small text-muted mb-0">Following</p>
                     </div>
-                </footer>
-            </div>
-            </body>
-            </html>
+                  </div>
+                </div>
+                <div class="card-body p-4 text-black">
+                  <div class="mb-5">
+                    <p class="lead fw-normal mb-1">About</p>
+                    <div class="p-4" style="background-color: #f8f9fa;">
+                      <p class="font-italic mb-1">Web Developer</p>
+                      <p class="font-italic mb-1">Lives in New York</p>
+                      <p class="font-italic mb-0">Photographer</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <p class="lead fw-normal mb-0">Recent photos</p>
+                    <p class="mb-0"><a href="#!" class="text-muted">Show all</a></p>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col mb-2">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp"
+                        alt="image 1" class="w-100 rounded-3">
+                    </div>
+                    <div class="col mb-2">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
+                        alt="image 1" class="w-100 rounded-3">
+                    </div>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
+                        alt="image 1" class="w-100 rounded-3">
+                    </div>
+                    <div class="col">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
+                        alt="image 1" class="w-100 rounded-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+</body>
+</html>
