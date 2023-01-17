@@ -1,17 +1,26 @@
 <html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>로그인</title>
+    <title>제품 목록</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/common.css">
-    
+    <link rel="stylesheet" href="common.css">
     <style>
     .title { padding-top:36px; padding-bottom:20px; }
     </style>
+    <style>
+    .in_container { clear:both; width:1400px; margin:0 auto; }
+    .in_container:after { content:""; display:block; clear:both; }
+    .card-title { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .card-text {   overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;
+      -webkit-line-clamp: 2;  -webkit-box-orient: vertical; }
+    #best li { margin-bottom:24px; }  
+    </style>
     <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
     <body>
+     
+    
       <nav class="navbar navbar-expand-md navbar-dark bg-danger">
         <div class="in_container"> 
           <a class="navbar-brand" href="index.html" id="logo">농심몰</a>
@@ -62,29 +71,63 @@
         </div>
     </nav>
     
-    <div class="content container" id="content">
-        <h2 class="title">로그인</h2>
-        <form name="frm1" id="frm1" action="/index.html" >
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <th>아이디</th>
-                        <td>
-                            <input type="text" name="cusId" id="cusId" placeholder="아이디(영문 소문자/숫자, 4~16자)" class="form-control" autofocus="" required="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>비밀번호</th>
-                        <td><input type="password" name="cusPw" id="cusPw" placeholder="비밀번호(영문 대소문자/숫자/특수문자 중 3가지 이상 조합, 8~16자)" class="form-control" required=""></td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="btn-group">
-                <input type="submit" name="submit-btn" class="btn btn-info" value="로그인">
-                <input type="reset" name="reset-btn" class="btn btn-info" value="취소">
-                <a href="agree.html" class="btn btn-danger">회원가입</a>
-            </div>
-        </form>	
+    
+    <nav aria-label="breadcrumb bg-light" style="clear:both;height:48px;width:100vw;border-bottom:3px solid #999;">
+      <ol class="breadcrumb bg-transparent" style="float:right;">
+        <li class="breadcrumb-item"><a href="index.jsp">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">제품목록</li>
+      </ol>
+    </nav>
+    <div class="container-fluid" id="content">
+        <div class="row" id="content_row">
+            
+            
+            <main class="content container">
+            
+                <h2 class="title">제품 목록</h2>
+                <ul class="row" id="best">
+                
+                    <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/nongshim_ra1.png" class="card-img-top" alt="라면1">
+                          <div class="card-body">
+                            <h5 class="card-title">라면1</h5>
+                            <p class="card-text">라면1</p>
+                            <p class="card-text"><strong style="color:red;">8000원</strong> (<del>8000)</del></p>
+                            <a href="cateA1.html" class="btn btn-primary">제품 상세보기</a>
+                          </div>
+                        </div>
+                    </li>
+                
+                    <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/nongshim_ra2.png" class="card-img-top" alt="라면2">
+                          <div class="card-body">
+                            <h5 class="card-title">라면2</h5>
+                            <p class="card-text">라면2</p>
+                            <p class="card-text"><strong style="color:red;">1650원</strong> (<del>1650)</del></p>
+                            <a href="cateA2.html" class="btn btn-primary">제품 상세보기</a>
+                          </div>
+                        </div>
+                    </li>
+                
+                    <li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" style="width: 18rem;">
+                          <img src="/img/nongshim_ra3.png" class="card-img-top" alt="라면3">
+                          <div class="card-body">
+                            <h5 class="card-title">라면3</h5>
+                            <p class="card-text">라면3</p>
+                            <p class="card-text"><strong style="color:red;">1000원</strong> (<del>1000)</del></p>
+                            <a href="cateA3.html" class="btn btn-primary">제품 상세보기</a>
+                          </div>
+                        </div>
+                    </li>
+                
+                
+                </ul>
+                
+            </main>
+        </div>
     </div>
     
     <footer class="py-3 my-4">
